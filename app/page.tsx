@@ -1,65 +1,252 @@
-import Image from "next/image";
+import { FreeTimeGallery } from "@/components/free-time-gallery";
+import { HomeBehavior } from "@/components/home-behavior";
 
 export default function Home() {
+  const freeTimePhotos = [
+    {
+      src: "/images/Freetime_1.png",
+      alt: "Фотография дизайнера",
+      position: "50% 50%",
+      rotation: -4,
+      delay: 0,
+      offsetY: 0,
+    },
+    {
+      src: "/images/Freetime_2.png",
+      alt: "Вулканы и извержения",
+      position: "18% 40%",
+      rotation: 0,
+      delay: 60,
+      offsetY: 0,
+    },
+    {
+      src: "/images/Freetime_3.png",
+      alt: "Пробежки",
+      position: "82% 38%",
+      rotation: +4,
+      delay: 120,
+      offsetY: 0,
+    },
+  ];
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      <HomeBehavior />
+
+      <header className="header">
+        <div className="container">
+          <a href="/" className="header-user" aria-label="На главную">
+            <span className="breadcrumbs-avatar" aria-hidden="true">
+              <img src="/images/avatar.png" alt="" />
+            </span>
+            <span>Дмитрий Васильев</span>
+          </a>
+          <a
+            className="header-cta"
+            href="https://t.me/d_vasilev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Связаться
+          </a>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </header>
+
+      <main className="main">
+        <div className="container">
+          <div className="hero-image fade-in">
+            <img src="/images/avatar.png" alt="Ваше фото" />
+          </div>
+
+          <section className="intro fade-in">
+            <h1>Дмитрий Васильев</h1>
+            <h2 className="subtitle">
+              Привет! Я продуктовый дизайнер с 3+ годами опыта в B2B SaaS для среднего и крупного бизнеса. Специализируюсь на сложных интерфейсах - аналитика, дашборды, AI-продукты, и на переводе бизнес-задач в конкретные UX-решения.
+            </h2>
+            <p className="description">
+              Больше <a href="#cases">о том что делаю</a>. Свяжитесь со
+              мной в <a href="https://t.me/d_vasilev">Telegram</a> или напишите
+              по адресу{" "}
+              <a href="mailto:dvasilevdesign@gmail.com">
+                dvasilevdesign@gmail.com
+              </a>
+            </p>
+          </section>
+
+            <section className="approach fade-in">
+              <h2>Подход</h2>
+              <p>
+                Проектирую с фокусом на измеримый результат: понимаю, как фича влияет на воронку и нагрузку на поддержку. Веду проекты от UX-исследований до релиза: провожу интервью, создаю прототипы и презентую решения команде. Прорабатываю сценарии от основного flow до corner cases, что сокращает правки после релиза и ускоряет разработку. Могу за вечер собрать функциональное демо и презентовать решение, которое на следующий день уйдёт в разработку.
+              </p>
+              <p>
+                Сейчас меня интересуют продукты, где дизайн напрямую влияет на ключевые метрики и карьерный рост в команде, где есть культура исследований и пространство для системной работы.
+              </p>
+            </section>
+
+          <section className="experience fade-in">
+            <h2>Опыт работы</h2>
+            <ul>
+              <li>
+                <strong>Product Designer, Андата</strong>, Февраль 2024 – по настоящее время
+                <p className="experience-description">
+                  B2B SaaS-платформа для оптимизации маркетинга (аналитика,
+                  реклама, AI-инструменты).
+                </p>
+                <ul>
+                  <li>
+                    Спроектировал AI-агентов с нуля: 82% пользователей бета-теста создали первого агента в первую неделю, без онбординга и инструкций
+                  </li>
+                  <li>
+                    Пересобрал модуль аналитики: нагрузка на аналитиков и
+                    разработку снизилась в 2 раза, среднее время настройки отчета
+                    сократилось с 45 до 8 минут
+                  </li>
+                  <li>
+                    Запустил когортный анализ: 64% крупных клиентов начали
+                    использовать функционал в первый месяц после релиза
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Product Designer, Upjob</strong>, Ноябрь 2022 – Январь 2024
+                <p className="experience-description">
+                  Job-платформа для рынка Таиланда (MVP).
+                </p>
+                <ul>
+                  <li>
+                    Собрал MVP, от стенда с конфликтующей логикой до продукта, готового к тестированию на реальных пользователях и заложил основу для будущей дизайн-системы
+                  </li>
+                  <li>
+                    Упростил создание ключевых сущностей - резюме и вакансии с 8–9 экранов до 4 шагов, снизив барьер для аудитории, которая редко пользуется цифровыми сервисами
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+
+          <div id="about">
+            <section className="cases">
+              <h2 id="cases" className="cases-heading fade-in">
+                Кейсы
+              </h2>
+              <div className="case-list">
+                <article className="case-item fade-in">
+                  <a href="/cases/ai-agents" className="case-link">
+                    <figure className="case-cover">
+                      <img
+                        src="/images/projects/Cover_agents.png"
+                        alt="Превью кейса AI агентов"
+                      />
+                    </figure>
+                    <h4 className="case-title">
+                      Как я спроектировал AI-агентов с нуля
+                    </h4>
+                    <p className="case-description">
+                      Андата · Февраль 2024 – по настоящее время
+                    </p>
+                  </a>
+                </article>
+
+                <article className="case-item fade-in">
+                  <a href="/cases/analytics" className="case-link">
+                    <figure className="case-cover">
+                      <img
+                        src="/images/projects/Cover_analytics.png"
+                        alt="Превью кейса аналитики"
+                      />
+                    </figure>
+                    <h4 className="case-title">
+                      Пересборка модуля аналитики и снижение нагрузки на команду
+                      в 2 раза
+                    </h4>
+                    <p className="case-description">
+                      Андата · Февраль 2024 – по настоящее время
+                    </p>
+                  </a>
+                </article>
+
+                <article className="case-item fade-in">
+                  <a href="/cases/upjob" className="case-link">
+                    <figure className="case-cover">
+                      <img
+                        src="/images/projects/Cover_upjob.png"
+                        alt="Превью кейса Upjob"
+                      />
+                    </figure>
+                    <h4 className="case-title">
+                      Как я подготовил MVP job-сервиса к запуску
+                    </h4>
+                    <p className="case-description">
+                      Upjob · Ноябрь 2022 – Январь 2024
+                    </p>
+                  </a>
+                </article>
+              </div>
+            </section>
+
+          <section className="skills fade-in">
+            <h2>Навыки</h2>
+            <p>
+              <strong>Продуктовый дизайн:</strong> UX/UI · Продуктовое мышление ·
+              Дизайн взаимодействий · UX-исследования · Глубинные интервью ·
+              Юзабилити-тестирование · Прототипирование · UI-kit · Паттерны
+              использования
+            </p>
+            <p>
+              <strong>Методологии:</strong> User Flow · User Story Mapping · Card
+              Sorting · Information Architecture · Jobs To Be Done · Customer
+              Journey Map · Design Review
+            </p>
+            <p>
+              <strong>Инструменты и корпоративное ПО:</strong> Figma (advanced:
+              auto layout, variants, components, variables) · VS Code +
+              Codex/Claude · CodePen · Protopie · Adobe Photoshop · Jira ·
+              Notion · GitLab · Miro · Loom
+            </p>
+            <p>
+              <strong>Технологии и гайдлайны:</strong> HTML/CSS (понимаю
+              возможности и ограничения) · Следую гайдлайнам (Material 3 & HIG) · Применяю в работе GPT, Claude - для ускорения ресерча,
+              прототипов, генерации UX-текстов, креативов
+            </p>
+          </section>
+
+          <section className="free-time fade-in">
+            <h2>В свободное время</h2>
+            <p>
+              Путешествую - придумываю что-то необычное и захватывающее, снимаю
+              стрит-фото, увлекаюсь гастрономией и бегом. Читаю NNGroup, Medium,
+              Телеграм Ozon Design, Dodo Mobile, Avito Tech. Учу английский
+              (цель уровень B2+).
+            </p>
+            <FreeTimeGallery photos={freeTimePhotos} />
+          </section>
+
+          <section className="contacts fade-in">
+            <h2>Контакты</h2>
+            <p>
+              Давайте работать вместе! Напишите мне, с удовольствием отвечу и обсудим, как могу помочь вам и вашему проекту.{" "}
+              <a href="https://t.me/d_vasilev">Telegram</a>,{" "}
+              <a href="mailto:dvasilevdesign@gmail.com">
+                dvasilevdesign@gmail.com
+              </a>
+            </p>
+          </section>
+          </div>
         </div>
       </main>
-    </div>
+
+      <footer className="footer">
+        <div className="container">
+          <p>
+            © 2026 · Навайбкодено на Next.js + Tailwind + Motion ·{" "}
+            <a href="https://t.me/d_vasilev">Telegram</a> ·{" "}
+            <a href="mailto:dvasilevdesign@gmail.com">
+              dvasilevdesign@gmail.com
+            </a>{" "}
+            ·
+          </p>
+        </div>
+      </footer>
+    </>
   );
 }
