@@ -142,7 +142,7 @@ export default function Home() {
                       Как я спроектировал AI-агентов с нуля
                     </h4>
                     <p className="case-description">
-                      Андата · Февраль 2024 – по настоящее время
+                      Андата · 2024 – 2026
                     </p>
                   </a>
                 </article>
@@ -160,7 +160,7 @@ export default function Home() {
                       в 2 раза
                     </h4>
                     <p className="case-description">
-                      Андата · Февраль 2024 – по настоящее время
+                      Андата · 2024 – 2026
                     </p>
                   </a>
                 </article>
@@ -177,7 +177,7 @@ export default function Home() {
                       Как я подготовил MVP job-сервиса к запуску
                     </h4>
                     <p className="case-description">
-                      Upjob · Ноябрь 2022 – Январь 2024
+                      Upjob · 2022 – 2024
                     </p>
                   </a>
                 </article>
