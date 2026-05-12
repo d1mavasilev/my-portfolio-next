@@ -13,7 +13,7 @@ export default function UpjobPage() {
         </div>
 
         <section className="project-intro fade-in">
-          <h1>Как я подготовил MVP job-сервиса к запуску</h1>
+          <h1>Подготовка MVP job-сервиса к запуску</h1>
           <h2 className="subtitle">
             Process case про архитектуру, логику ролей, устранение конфликтов логики и подготовку продукта к тестированию
           </h2>

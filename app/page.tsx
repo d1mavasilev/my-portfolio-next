@@ -174,7 +174,7 @@ export default function Home() {
                       />
                     </figure>
                     <h4 className="case-title">
-                      Как я подготовил MVP job-сервиса к запуску
+                      Подготовка MVP job-сервиса к запуску
                     </h4>
                     <p className="case-description">
                       Upjob · 2022 – 2024
