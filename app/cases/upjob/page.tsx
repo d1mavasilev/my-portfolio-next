@@ -97,13 +97,13 @@ export default function UpjobPage() {
           </p>
 
           <ProjectImage
-            src="/images/projects/Screen_upjob_1.png"
+            src="/images/projects/Screen_Upjob_1.png"
             alt="Flow и логика работы раздела откликов"
             caption="Flow и логика работы раздела откликов"
           />
 
           <ProjectImage
-            src="/images/projects/Screen_upjob_2.png"
+            src="/images/projects/Screen_Upjob_2.png"
             alt="Flow создания вакансии"
             caption="Flow создания вакансии"
           />
@@ -128,7 +128,7 @@ export default function UpjobPage() {
           </p>
 
           <ProjectImage
-            src="/images/projects/Screen_upjob_3.png"
+            src="/images/projects/Screen_Upjob_3.png"
             alt="Единый аккаунт и логика ролей"
             caption="Единый аккаунт и логика ролей"
           />
@@ -144,7 +144,7 @@ export default function UpjobPage() {
           </p>
 
           <ProjectImage
-            src="/images/projects/Screen_upjob_4.png"
+            src="/images/projects/Screen_Upjob_4.png"
             alt="Пошаговое создание сущностей"
             caption="Пошаговое создание сущностей"
           />
@@ -160,13 +160,13 @@ export default function UpjobPage() {
           </p>
 
           <ProjectImage
-            src="/images/projects/Screen_upjob_5.png"
+            src="/images/projects/Screen_Upjob_5.png"
             alt="Раздел откликов в мобильной версии"
             caption="Раздел откликов в мобильной версии"
           />
 
           <ProjectImage
-            src="/images/projects/Screen_upjob_6.png"
+            src="/images/projects/Screen_Upjob_6.png"
             alt="Раздел откликов в веб-версии"
             caption="Раздел откликов в веб-версии"
           />
@@ -180,13 +180,13 @@ export default function UpjobPage() {
           </p>
 
           <ProjectImage
-            src="/images/projects/Screen_upjob_7.png"
+            src="/images/projects/Screen_Upjob_7.png"
             alt="Поиск в мобильной версии"
             caption="Поиск в мобильной версии"
           />
 
           <ProjectImage
-            src="/images/projects/Screen_upjob_8.png"
+            src="/images/projects/Screen_Upjob_8.png"
             alt="Поиск в веб-версии"
             caption="Поиск в веб-версии"
           />
