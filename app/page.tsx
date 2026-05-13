@@ -189,24 +189,14 @@ export default function Home() {
             <p>
               <strong>Продуктовый дизайн:</strong> UX/UI · Продуктовое мышление ·
               Дизайн взаимодействий · UX-исследования · Глубинные интервью ·
-              Юзабилити-тестирование · Прототипирование · UI-kit · Паттерны
-              использования
+              Юзабилити-тестирование · Прототипирование · UI-kit
             </p>
             <p>
               <strong>Методологии:</strong> User Flow · User Story Mapping · Card
-              Sorting · Information Architecture · Jobs To Be Done · Customer
-              Journey Map · Design Review
+              Sorting · Information Architecture · JTBD · CJM · Design Review
             </p>
             <p>
-              <strong>Инструменты и корпоративное ПО:</strong> Figma (advanced:
-              auto layout, variants, components, variables) · VS Code +
-              Codex/Claude · CodePen · Protopie · Adobe Photoshop · Jira ·
-              Notion · GitLab · Miro · Loom
-            </p>
-            <p>
-              <strong>Технологии и гайдлайны:</strong> HTML/CSS (понимаю
-              возможности и ограничения) · Следую гайдлайнам (Material 3 & HIG) · Применяю в работе GPT, Claude - для ускорения ресерча,
-              прототипов, генерации UX-текстов, креативов
+              <strong>Инструменты, ПО и технологии:</strong> Figma (advanced: auto layout, variants, components, variables) · AI-инструменты (VS Code + Codex/Claude) для ускорения ресерча, прототипирования, UX-текстов и креативов · Protopie · Jira · Notion · Miro · HTML/CSS · Material 3 & HIG
             </p>
           </section>
 
