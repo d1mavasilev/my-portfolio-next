@@ -59,12 +59,7 @@ export default function Home() {
               Привет! Я продуктовый дизайнер с 3+ годами опыта в B2B SaaS для среднего и крупного бизнеса. Специализируюсь на сложных интерфейсах - аналитика, дашборды, AI-продукты, и на переводе бизнес-задач в конкретные UX-решения.
             </h2>
             <p className="description">
-              Больше <a href="#cases">о том что делаю</a>. Свяжитесь со
-              мной в <a href="https://t.me/d_vasilev">Telegram</a> или напишите
-              по адресу{" "}
-              <a href="mailto:dvasilevdesign@gmail.com">
-                dvasilevdesign@gmail.com
-              </a>
+              <a href="#cases">Кейсы</a> · <a href="https://drive.google.com/file/d/1Yh6jngkaE25-WkQjsd-gOAa3X-blcK65/view?usp=sharing">CV</a> · <a href="https://t.me/d_vasilev">Telegram</a> · <a href="mailto:dvasilevdesign@gmail.com">dvasilevdesign@gmail.com</a>
             </p>
           </section>
 
