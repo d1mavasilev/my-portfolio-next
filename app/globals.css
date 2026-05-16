@@ -219,6 +219,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 16px;
 }
 
 .logo img {
@@ -233,6 +234,7 @@ body {
     gap: 12px;
     color: var(--color-text);
     text-decoration: none;
+    min-width: 0;
 }
 
 .header-user:hover {
@@ -250,6 +252,14 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: var(--color-text);
+    white-space: nowrap;
+}
+
+.header-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
 }
 
 .header-cta {
@@ -263,7 +273,7 @@ body {
     color: #ffffff;
     text-decoration: none;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 8px;
     letter-spacing: 0.02em;
     box-shadow: var(--shadow-cta-dark);
@@ -272,16 +282,32 @@ body {
     transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
 }
 
+.header-cta-secondary {
+    background-color: #e5e5e5;
+    color: #000000;
+    box-shadow: var(--shadow-cta-light);
+}
+
 .header-cta:hover {
     transform: translateY(-1px);
     box-shadow: var(--shadow-cta-dark-hover);
     background-color: #000000;
 }
 
+.header-cta-secondary:hover {
+    box-shadow: var(--shadow-cta-light-hover);
+    background-color: #d8d8d8;
+}
+
 .header-cta:active {
     transform: scale(0.96);
     box-shadow: var(--shadow-cta-dark);
     background-color: #000000;
+}
+
+.header-cta-secondary:active {
+    box-shadow: var(--shadow-cta-light);
+    background-color: #d2d2d2;
 }
 
 /* ===== ОСНОВНОЙ КОНТЕНТ ===== */
@@ -745,7 +771,7 @@ figcaption {
     padding: 0 16px;
     border-radius: 8px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: 0.02em;
     text-decoration: none;
     box-shadow: var(--shadow-cta-light);
@@ -800,6 +826,10 @@ figcaption {
 /* ===== АДАПТИВНОСТЬ ===== */
 
 @media (max-width: 768px) {
+    .header .container {
+        flex-wrap: nowrap;
+    }
+
     h1 {
         font-size: 36px;
     }
@@ -839,6 +869,52 @@ figcaption {
 }
 
 @media (max-width: 480px) {
+    .header {
+        padding: 12px 0;
+    }
+
+    .header .container {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .header-user {
+        gap: 10px;
+        flex: 1 1 auto;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .breadcrumbs-avatar {
+        flex-shrink: 0;
+    }
+
+    .breadcrumbs-avatar img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .header-user span:last-child {
+        display: block;
+        min-width: 0;
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .header-actions {
+        gap: 8px;
+        flex: 0 0 auto;
+    }
+
+    .header-cta {
+        height: 32px;
+        min-width: 32px;
+        padding: 0 12px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+
     :root {
         --spacing-md: 20px;
         --spacing-lg: 48px;
