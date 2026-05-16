@@ -30,7 +30,7 @@ export function ProjectPageShell({ children }: ProjectPageShellProps) {
         <div className="container">
           <p>
             © 2026 · Навайбкодено на Next.js + Tailwind + Motion ·{" "}
-            <a href="https://t.me/d_vasilev">Telegram</a> ·{" "}
+            <a href="https://t.me/d_vasilev" target="_blank" rel="noopener noreferrer">Telegram</a> · {" "}
             <a href="mailto:dvasilevdesign@gmail.com">
               dvasilevdesign@gmail.com
             </a>{" "}
