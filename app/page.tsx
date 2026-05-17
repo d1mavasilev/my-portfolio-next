@@ -208,7 +208,7 @@ export default function Home() {
             <h2>Контакты</h2>
             <p>
               Давайте работать вместе! Напишите мне, с удовольствием отвечу и обсудим, как могу помочь вам и вашему проекту.{" "}
-              <a href="https://t.me/d_vasilev">Telegram</a>,{" "}
+              <a href="https://t.me/d_vasilev" target="_blank" rel="noopener noreferrer">Telegram</a>,{" "}
               <a href="mailto:dvasilevdesign@gmail.com">
                 dvasilevdesign@gmail.com
               </a>

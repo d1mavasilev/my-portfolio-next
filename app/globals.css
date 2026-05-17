@@ -283,7 +283,7 @@ body {
 }
 
 .header-cta-secondary {
-    background-color: #e5e5e5;
+    background-color: #ffffff;
     color: #000000;
     box-shadow: var(--shadow-cta-light);
 }
@@ -295,8 +295,9 @@ body {
 }
 
 .header-cta-secondary:hover {
-    box-shadow: var(--shadow-cta-light-hover);
-    background-color: #d8d8d8;
+    box-shadow: var(--shadow-cta-dark-hover);
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .header-cta:active {
@@ -306,8 +307,9 @@ body {
 }
 
 .header-cta-secondary:active {
-    box-shadow: var(--shadow-cta-light);
-    background-color: #d2d2d2;
+    box-shadow: var(--shadow-cta-dark);
+    background-color: #000000;
+    color: #ffffff;
 }
 
 /* ===== ОСНОВНОЙ КОНТЕНТ ===== */
