@@ -8,7 +8,7 @@ export default function AnalyticsPage() {
       <div className="container">
         <div>
           <p className="project-meta">
-            Андата · Февраль 2024 - по настоящее время · B2B SaaS
+            Андата · 2024 - 2026 · B2B SaaS
           </p>
         </div>
 

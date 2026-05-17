@@ -8,7 +8,7 @@ export default function UpjobPage() {
       <div className="container">
         <div>
           <p className="project-meta">
-            Upjob · Ноябрь 2022 - Январь 2024 · B2B/B2C Job-сервис
+            Upjob · 2022 - 2024 · B2B/B2C Job-сервис
           </p>
         </div>
 
