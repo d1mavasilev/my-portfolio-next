@@ -80,12 +80,12 @@ export default function Home() {
             <h2>Опыт работы</h2>
             <ul>
               <li>
-                <strong>Андата · Product Designer</strong>, Февраль 2024 – ...
-                <p className="experience-description">
+                <strong>Андата · Product Designer</strong> · Фев 2024 – ...
+                <p className="experience-description text-muted">
                   B2B SaaS-платформа для оптимизации маркетинга (аналитика,
                   реклама, AI-инструменты).
                 </p>
-                <ul className="pl-5 space-y-1" style={{ listStyleType: '"✦ "' }}>
+                <ul className="pl-5 space-y-1 text-muted" style={{ listStyleType: '"✦ "' }}>
                   <li>
                     Спроектировал раздел AI-агентов с нуля. Adoption rate составил 82% среди участников бета-теста (50 SMB-клиентов) - пользователи создали первого агента, в первую неделю самостоятельно, без онбординга.
                   </li>
@@ -101,11 +101,11 @@ export default function Home() {
                 </ul>
               </li>
               <li>
-                <strong>Upjob · Product Designer</strong>, Ноябрь 2022 – Январь 2024
-                <p className="experience-description">
+                <strong>Upjob · Product Designer</strong> · Нояб 2022 – Янв 2024
+                <p className="experience-description text-muted">
                   Job-платформа для рынка Таиланда (MVP).
                 </p>
-                <ul className="pl-5 space-y-1" style={{ listStyleType: '"✦ "' }}>
+                <ul className="pl-5 space-y-1 text-muted" style={{ listStyleType: '"✦ "' }}>
                   <li>
                     Собрал MVP, от стенда с конфликтующей логикой до продукта готового к тесту на реальных пользователях
                   </li>
@@ -183,19 +183,16 @@ export default function Home() {
           <section className="skills fade-in">
             <h2>Навыки</h2>
             <p>
-              <strong>Продуктовый дизайн:</strong> UX/UI · Продуктовое мышление ·
-              Дизайн взаимодействий · UX-исследования · Глубинные интервью ·
-              Юзабилити-тестирование · Прототипирование · Дизайн-системы
+              <strong>Продуктовый дизайн:</strong> <span className="text-muted">UX/UI · Продуктовое мышление · Дизайн взаимодействий · UX-исследования · Глубинные интервью · Юзабилити-тестирование · Прототипирование · Дизайн-системы</span>
             </p>
             <p>
-              <strong>Методологии:</strong> User Flow · User Story Mapping · Card
-              Sorting · Information Architecture · JTBD · CJM · Design Review
+              <strong>Методологии:</strong> <span className="text-muted">User Flow · User Story Mapping · Card Sorting · Information Architecture · JTBD · CJM · Design Review</span>
             </p>
             <p>
-              <strong>Инструменты, ПО и технологии:</strong> Figma (advanced: auto layout, variants, components, variables) · AI-инструменты, VS Code + Codex/Claude, для ускорения ресерча, прототипирования, UX-текстов и креативов · Protopie · Jira · Notion · Miro · HTML/CSS · Material 3 & HIG
+              <strong>Инструменты, ПО и технологии:</strong> <span className="text-muted">Figma (advanced: auto layout, variants, components, variables) · AI-инструменты, VS Code + Codex/Claude, для ускорения ресерча, прототипирования, UX-текстов и креативов · Protopie · Jira · Notion · Miro · HTML/CSS · Material 3 & HIG</span>
             </p>
             <p>
-              <strong>Документация:</strong> описываю спецификации и механики сценариев на языке понятном разработке и продакту в Figma, Notion, Git и Confluence
+              <strong>Документация:</strong> <span className="text-muted">описываю спецификации и механики сценариев на языке понятном разработке и продакту в Figma, Notion, Git и Confluence</span>
             </p>
           </section>
 

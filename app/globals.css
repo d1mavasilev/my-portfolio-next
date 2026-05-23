@@ -141,6 +141,7 @@
 :root {
     /* Цвета */
     --color-text: #2c2c2b;
+    --color-text-secondary: #565654;
     --color-text-light: #7d7a75;
     --color-bg: #ffffff;
     --color-accent: #000000;
@@ -440,6 +441,10 @@ body.home.avatar-in-header .header {
 
 .description {
     font-size: 20px;
+}
+
+.text-muted {
+    color: var(--color-text-secondary);
 }
 
 /* Опыт */
