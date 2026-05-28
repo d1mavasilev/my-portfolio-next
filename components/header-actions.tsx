@@ -17,7 +17,7 @@ export function HeaderActions() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Связаться
+        Написать в Tg
       </a>
     </div>
   )
