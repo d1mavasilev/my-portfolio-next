@@ -77,7 +77,7 @@ export default function Home() {
             </section>
 
           <section className="experience fade-in">
-            <h2>Опыт работы</h2>
+            <h2>Опыт</h2>
             <ul>
               <li>
                 <strong>Андата · Product Designer</strong> · Фев 2024 – ...

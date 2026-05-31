@@ -188,20 +188,26 @@ body {
 
 /* ===== РўРРџРћР“Р РђР¤РРљРђ ===== */
 
-h1 {
-    font-size: 48px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-heading);
     font-weight: 600;
     line-height: var(--line-height-tight);
-    margin-bottom: var(--spacing-md);
     text-wrap: balance;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: var(--spacing-md);
 }
 
 h2 {
     font-size: 32px;
-    font-weight: 600;
-    line-height: var(--line-height-tight);
     margin-bottom: var(--spacing-md);
-    text-wrap: balance;
 }
 
 #cases {
@@ -210,17 +216,11 @@ h2 {
 
 h3 {
     font-size: 20px;
-    font-weight: 600;
-    line-height: var(--line-height-tight);
     margin-bottom: var(--spacing-md);
-    text-wrap: balance;
 }
 
 h4 {
     font-size: 24px;
-    font-weight: 600;
-    line-height: var(--line-height-tight);
-    text-wrap: balance;
 }
 
 p {
