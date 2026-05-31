@@ -505,6 +505,21 @@ body.home.avatar-in-header .header {
     border-radius: 16px;
 }
 
+@media (min-width: 1024px) {
+    .project-page .project-image {
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+    }
+
+    .project-page .project-image img,
+    .project-page .project-image figcaption {
+        width: min(1080px, calc(100vw - 48px));
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .free-time-gallery {
     display: flex;
     flex-wrap: wrap;

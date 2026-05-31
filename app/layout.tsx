@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Дмитрий Васильев Product Designer",
-  description: "Портфолио продуктового дизайнера Дмитрия Васильева",
+  description: "Портфолио продуктового дизайнера",
 };
 
 export default function RootLayout({
