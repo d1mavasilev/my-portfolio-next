@@ -740,6 +740,27 @@ figcaption {
     margin-bottom: var(--spacing-xl);
 }
 
+.case-navigation {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    gap: 16px;
+    margin: 0 0 32px;
+}
+
+.case-navigation-link {
+    gap: 8px;
+}
+
+.case-navigation .header-cta {
+    width: 100%;
+    height: 40px;
+}
+
+.case-navigation-link svg {
+    flex-shrink: 0;
+}
+
 /* Команда */
 .team-list {
     list-style: none;
@@ -959,6 +980,10 @@ figcaption {
     .project-cta-btn {
         width: auto;
         align-self: center;
+    }
+
+    .case-navigation {
+        margin-bottom: 24px;
     }
 }
 

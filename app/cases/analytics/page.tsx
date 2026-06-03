@@ -1,6 +1,7 @@
 import { ProjectCTA } from "@/components/project-cta";
 import { ProjectImage } from "@/components/project-image";
 import { ProjectPageShell } from "@/components/project-page-shell";
+import { CaseNavigation } from "@/components/case-navigation";
 
 export default function AnalyticsPage() {
   return (
@@ -324,6 +325,7 @@ export default function AnalyticsPage() {
           </ul>
         </section>
 
+        <CaseNavigation nextHref="/cases/upjob" />
         <ProjectCTA />
       </div>
     </ProjectPageShell>
