@@ -96,7 +96,10 @@ export default function Home() {
                     Запустил когортный анализ. 64% крупных клиентов создали 2 и более когорты в первый месяц после релиза без обучения и онбординга
                   </li>
                   <li>
-                    Развивал дизайн-систему. Добавил 10 новых компонентов, описал паттерны и поддерживал UI-kit, сократив время на типовые задачи проектирования
+                    Провёл юзабилити-тестирование, глубинные интервью и конкурентный анализ - спроектировал продуктовый flow, упростив логику и снизив точки падения конверсии
+                  </li>
+                  <li>
+                    Расширил дизайн-систему. Добавил 10 новых компонентов, описал паттерны и поддерживал UI-kit, сократив время на типовые задачи проектирования
                   </li>
                 </ul>
               </li>
@@ -183,10 +186,7 @@ export default function Home() {
           <section className="skills fade-in">
             <h2>Навыки</h2>
             <p>
-              <strong>Продуктовый дизайн:</strong> <span className="text-muted">UX/UI · Продуктовое мышление · Дизайн взаимодействий · UX-исследования · Глубинные интервью · Юзабилити-тестирование · Прототипирование · Дизайн-системы</span>
-            </p>
-            <p>
-              <strong>Методологии:</strong> <span className="text-muted">User Flow · User Story Mapping · Card Sorting · Information Architecture · JTBD · CJM · Design Review</span>
+              <strong>Экспертиза в UX и дизайне:</strong> <span className="text-muted">Продуктовое мышление · Информационная архитектура · UX исследования · User Flow · User Story Mapping · Card Sorting · Информационная архитектура · JTBD · CJM · Глубинные интервью · Юзабилити-тестирование · Вайрфреймы · Прототипирование · Дизайн-системы · A/B-тесты · Дизайн ревью</span>
             </p>
             <p>
               <strong>Инструменты, ПО и технологии:</strong> <span className="text-muted">Figma (advanced: auto layout, variants, components, variables) · AI-инструменты, VS Code + Codex/Claude, для ускорения ресерча, прототипирования, UX-текстов и креативов · Protopie · Jira · Notion · Miro · HTML/CSS · Material 3 & HIG</span>
