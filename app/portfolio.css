@@ -875,6 +875,7 @@ figcaption {
         min-width: 32px;
         padding: 0 12px;
         font-size: 14px;
+        gap: 4px;
         border-radius: 8px;
     }
 

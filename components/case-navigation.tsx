@@ -13,7 +13,7 @@ export function CaseNavigation({ nextHref }: CaseNavigationProps) {
         <span>На главную</span>
       </Link>
       <Link href={nextHref} className="header-cta header-cta-secondary case-navigation-link">
-        <span>Следующий кейс</span>
+        <span>Следующий</span>
         <ArrowRight aria-hidden="true" size={16} strokeWidth={2} />
       </Link>
     </nav>
