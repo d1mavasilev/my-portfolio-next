@@ -45,10 +45,20 @@ export default function AnalyticsPage() {
             в экосистему продукта.
           </p>
 
-          <ProjectImage
-            src="/images/projects/Screen_analytics_1.png"
-            alt="Общий вид аналитики"
-          />
+          <h3>Анализ рынка</h3>
+          <figure
+            className="fade-in"
+            style={{ width: "100%", maxWidth: "810px", margin: "var(--spacing-lg) 0", textAlign: "left" }}
+          >
+            <img
+              src="/images/projects/competitive_analysis_analytics.png"
+              loading="lazy"
+              style={{ width: "auto", height: "clamp(56px, 18vw, 96px)", display: "block" }}
+            />
+          </figure>
+          <p>
+            Изучил как устроена аналитика у лидеров: Mixpanel, Amplitude, Tableau, Google Analytics, Метрика, Airtable. Зафиксировал рабочие паттерны, в частности, как устроены фильтры, декомпозиция и визарды у Mixpanel и Amplitude. Подчеркнул особенности и болевые точки которые стоило адаптировать. Это легло в основу решений конструктора отчетов и когортного анализа.
+          </p>
 
           <h3>Конструктор отчётов</h3>
           <p>
@@ -59,6 +69,11 @@ export default function AnalyticsPage() {
             src="/images/projects/Screen_analytics_2.png"
             alt="Создание и редактирование отчетов"
             caption="Создание и редактирование отчетов"
+          />
+
+          <ProjectImage
+            src="/images/projects/Screen_analytics_1.png"
+            alt="Общий вид раздела аналитики"
           />
 
           <h3>Смарт-фильтры</h3>
