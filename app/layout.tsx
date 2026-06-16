@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
   openGraph: {
     title: "Дмитрий Васильев – Product designer",
-    description: "Проектирую высоконагруженные аналитические интерфейсы, дашборды, AI-продукты, корпоративные системы и личные кабинеты",
+    description: "Проектирую высоконагруженные интерфейсы, дашборды, AI-продукты, корпоративные системы и личные кабинеты",
     images: [
       {
         url: "/portfolio_ogimage.jpg",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Дмитрий Васильев – Product designer",
-    description: "Проектирую высоконагруженные аналитические интерфейсы, дашборды, AI-продукты, корпоративные системы и личные кабинеты",
+    description: "Проектирую высоконагруженные интерфейсы, дашборды, AI-продукты, корпоративные системы и личные кабинеты",
     images: ["/portfolio_ogimage.jpg"],
   },
 };
