@@ -21,7 +21,36 @@ const interTight = Inter_Tight({
 
 export const metadata: Metadata = {
   title: "Дмитрий Васильев Product Designer",
+
   description: "Портфолио продуктового дизайнера",
+
+  openGraph: {
+    title: "Дмитрий Васильев Product Designer",
+
+    description: "Портфолио продуктового дизайнера",
+
+    images: [
+      {
+        url: "/portfolio_ogimage.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Дмитрий Васильев — Product Designer",
+      },
+    ],
+
+    type: "website",
+    locale: "ru_RU",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Дмитрий Васильев Product Designer",
+
+    description: "Портфолио продуктового дизайнера",
+
+    images: ["/portfolio_ogimage.jpg"],
+  },
 };
 
 export default function RootLayout({
@@ -34,7 +63,9 @@ export default function RootLayout({
       lang="ru"
       className={`${geistSans.variable} ${geistMono.variable} ${interTight.variable} h-full antialiased`}
     >
-      <body className="home min-h-full flex flex-col">{children}</body>
+      <body className="home min-h-full flex flex-col">
+        {children}
+      </body>
     </html>
   );
 }
