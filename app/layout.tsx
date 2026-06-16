@@ -20,15 +20,14 @@ const interTight = Inter_Tight({
 });
 
 export const metadata: Metadata = {
-  title: "Дмитрий Васильев Product Designer",
+  metadataBase: new URL("https://dvasilevdesign.vercel.app"),
 
+  title: "Дмитрий Васильев Product Designer",
   description: "Портфолио продуктового дизайнера",
 
   openGraph: {
     title: "Дмитрий Васильев Product Designer",
-
     description: "Портфолио продуктового дизайнера",
-
     images: [
       {
         url: "/portfolio_ogimage.jpg",
@@ -37,18 +36,14 @@ export const metadata: Metadata = {
         alt: "Дмитрий Васильев — Product Designer",
       },
     ],
-
     type: "website",
     locale: "ru_RU",
   },
 
   twitter: {
     card: "summary_large_image",
-
     title: "Дмитрий Васильев Product Designer",
-
     description: "Портфолио продуктового дизайнера",
-
     images: ["/portfolio_ogimage.jpg"],
   },
 };
