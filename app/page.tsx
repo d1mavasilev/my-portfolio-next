@@ -80,7 +80,7 @@ export default function Home() {
             <h2>Опыт</h2>
             <ul>
               <li>
-                <strong>Андата · Product Designer</strong> · Фев 2024 – ...
+                <strong>Андата · Product Designer</strong> · Фев 2024 – Июнь 2026
                 <p className="experience-description text-muted">
                   B2B SaaS-платформа для оптимизации маркетинга (аналитика,
                   реклама, AI-инструменты).
