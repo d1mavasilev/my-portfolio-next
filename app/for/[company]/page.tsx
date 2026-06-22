@@ -2,7 +2,7 @@ import { FreeTimeGallery } from "@/components/free-time-gallery";
 import { HeaderActions } from "@/components/header-actions";
 import { HomeBehavior } from "@/components/home-behavior";
 import Link from "next/link";
-import { companies } from "@/app/companies";
+import { companies } from "../../companies";
 
 export default function CompanyPage({ params }: { params: { company: string } }) {
   const slug = params.company.toLowerCase();
