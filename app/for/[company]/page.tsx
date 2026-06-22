@@ -4,12 +4,13 @@ import { HomeBehavior } from "@/components/home-behavior";
 import Link from "next/link";
 import { companies } from "../../companies";
 
-export default function CompanyPage({ params }: { params: { company: string } }) {
-  const slug = params.company.toLowerCase();
-  const company = companies[slug];
+export default async function CompanyPage({ params }: { params: Promise<{ company: string }> }) {
+  const { company: companySlug } = await params;
+    const slug = companySlug.toLowerCase();
+    const company = companies[slug];
 
   const greeting = company ? (
-    <>Привет, <span style={{ color: company.color }}>{company.displayName}</span>!</>
+    <>Привет, <span style={{ color: company.color }}>{company.displayName}!</span></>
   ) : (
     <>Привет!</>
   );
