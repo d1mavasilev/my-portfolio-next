@@ -189,7 +189,13 @@ body {
 /* ===== РўРРџРћР“Р РђР¤РРљРђ ===== */
 
 h1,
-h2,
+h2 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    line-height: var(--line-height-tight);
+    text-wrap: balance;
+}
+
 h3,
 h4,
 h5,

@@ -1,4 +1,4 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+﻿@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
@@ -323,7 +323,13 @@ body {
 /* ===== ТИПОГРАФИКА ===== */
 
 h1,
-h2,
+h2 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    line-height: var(--line-height-tight);
+    text-wrap: balance;
+}
+
 h3,
 h4,
 h5,
