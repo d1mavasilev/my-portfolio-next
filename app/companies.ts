@@ -11,5 +11,9 @@ export const companies: Record<string, { displayName: string; color: string }> =
     displayName: "Лаборатория Касперского",
     color: "#009881",
   },
+  2gis: {
+    displayName: "2ГИС",
+    color: "#19aa1e",
+  },
   // сюда добавляешь новые компании
 };
