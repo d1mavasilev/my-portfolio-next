@@ -67,7 +67,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
           <section className="intro fade-in">
             <h1>Дмитрий Васильев</h1>
             <h2 className="subtitle">
-              {greeting} Я продуктовый дизайнер с 3+ годами опыта в B2B. Проектирую интерфейсы со сложной бизнес-логикой — AI-продукты, аналитика и дашборды, внутренние web-системы. И превращаю их в простые и понятные UX-решения.
+              {greeting} Я продуктовый дизайнер с 3+ годами опыта в B2B. Проектирую интерфейсы со сложной бизнес-логикой и превращаю их в простые и понятные UX-решения. AI-продукты, аналитика и дашборды, внутренние web-системы.
             </h2>
             <p className="description">
               <a href="#cases">Кейсы</a> ·{" "}
@@ -171,6 +171,23 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
                     </h4>
                     <p className="case-description">
                       Андата · 2024 – 2026
+                    </p>
+                  </a>
+                </article>
+
+                <article className="case-item fade-in">
+                  <a href="/cases/visuals" className="case-link">
+                    <figure className="case-cover">
+                      <img
+                        src="/images/projects/Cover_visuals.png"
+                        alt="Превью визуалов и UI-концептов"
+                      />
+                    </figure>
+                    <h4 className="case-title">
+                      Визуалы и UI-концепты
+                    </h4>
+                    <p className="case-description">
+                      2025 – 2026
                     </p>
                   </a>
                 </article>
