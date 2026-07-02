@@ -270,11 +270,10 @@ section {
 
 /* РђРІР°С‚Р°СЂ */
 .hero-image {
-    margin-bottom: var(--spacing-lg);
-    border-radius: 16px;
+    border-radius: 32px;
     overflow: hidden;
-    width: 96px;
-    height: 96px;
+    width: 124px;
+    height: 124px;
     transition: opacity 0.2s ease, height 0.2s ease, margin-bottom 0.2s ease;
 }
 

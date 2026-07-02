@@ -1,6 +1,7 @@
 import { FreeTimeGallery } from "@/components/free-time-gallery";
 import { HeaderActions } from "@/components/header-actions";
 import { HomeBehavior } from "@/components/home-behavior";
+import { Tag } from "@/components/tag";
 import Link from "next/link";
 
 export default function Home() {
@@ -49,15 +50,24 @@ export default function Home() {
 
       <main className="main">
         <div className="container">
-          <div className="hero-image fade-in">
-            <img src="/images/avatar.png" alt="Ваше фото" />
+          <div className="intro-top fade-in">
+            <div className="hero-image intro-avatar">
+              <img src="/images/avatar.png" alt="Ваше фото" />
+            </div>
+            <h2 className="intro-name">Дмитрий Васильев</h2>
           </div>
 
           <section className="intro fade-in">
-            <h1>Дмитрий Васильев</h1>
             <h2 className="subtitle">
-              Привет! Я продуктовый дизайнер с 3+ годами опыта в B2B. Проектирую интерфейсы со сложной бизнес-логикой и превращаю их в понятные UX-решения. AI-продукты, аналитика и дашборды, внутренние web-системы, корпоративные интерфейсы.
+              Привет! Я продуктовый дизайнер с 3+ годами опыта в B2B. Проектирую высоконагруженные интерфейсы со сложной бизнес-логикой и превращаю их в понятные UX-решения
             </h2>
+            <div className="tags" aria-label="Теги">
+              <Tag>AI-продукты</Tag>
+              <Tag>Аналитика и Дашборды</Tag>
+              <Tag>Корпоративные интерфейсы</Tag>
+              <Tag>Внутренние web-системы</Tag>
+              <Tag>Личные кабинеты и формы</Tag>
+            </div>
             <p className="description">
               <a href="#cases">Кейсы</a> ·{" "}
               <a href="https://drive.google.com/file/d/1Yh6jngkaE25-WkQjsd-gOAa3X-blcK65/view?usp=sharing" target="_blank" rel="noopener noreferrer">CV</a> · {" "}
