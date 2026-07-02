@@ -1058,6 +1058,15 @@ figcaption {
         align-self: center;
     }
 
+    .tags {
+        gap: 8px;
+    }
+
+    .tag {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
     .case-navigation {
         gap: 16px;
         margin-bottom: 24px;
