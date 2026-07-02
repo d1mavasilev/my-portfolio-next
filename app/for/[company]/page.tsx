@@ -18,7 +18,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
   const freeTimePhotos = [
     {
       src: "/images/Freetime_1.png",
-      alt: "Фотография дизайнера",
+      alt: "Фото дизайнера",
       position: "50% 50%",
       rotation: -4,
       delay: 0,
@@ -67,7 +67,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
           <section className="intro fade-in">
             <h1>Дмитрий Васильев</h1>
             <h2 className="subtitle">
-              {greeting} Я продуктовый дизайнер с 3+ годами опыта в B2B. Проектирую интерфейсы со сложной бизнес-логикой и превращаю их в простые и понятные UX-решения. AI-продукты, аналитика и дашборды, внутренние web-системы.
+              {greeting} Я продуктовый дизайнер с 3+ годами опыта в B2B. Проектирую высоконагруженные интерфейсы со сложной бизнес-логикой и превращаю их в понятные UX-решения. AI-продукты, аналитика и дашборды, внутренние web-системы, корпоративные интерфейсы.
             </h2>
             <p className="description">
               <a href="#cases">Кейсы</a> ·{" "}
