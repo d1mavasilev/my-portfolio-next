@@ -15,5 +15,21 @@ export const companies: Record<string, { displayName: string; color: string }> =
     displayName: "2ГИС",
     color: "#19aa1e",
   },
+  atb: {
+    displayName: "АТБ",
+    color: "#fe5000",
+  },
+  ingosstrakh: {
+    displayName: "Ингосстрах",
+    color: "#004de5",
+  },
+  bks: {
+    displayName: "БКС",
+    color: "#006df0",
+  },
+  vk: {
+    displayName: "VK",
+    color: "#0077ff",
+  },
   // сюда добавляешь новые компании
 };
