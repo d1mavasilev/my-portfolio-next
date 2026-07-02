@@ -272,8 +272,8 @@ section {
 .hero-image {
     border-radius: 32px;
     overflow: hidden;
-    width: 124px;
-    height: 124px;
+    width: 108px;
+    height: 108px;
     transition: opacity 0.2s ease, height 0.2s ease, margin-bottom 0.2s ease;
 }
 

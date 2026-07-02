@@ -443,15 +443,15 @@ body.home.avatar-in-header .header {
 .intro-top {
     display: flex;
     align-items: center;
-    height: 124px;
+    height: 108px;
     gap: 32px;
     margin-bottom: var(--spacing-lg);
     flex-wrap: nowrap;
 }
 
 .intro-avatar {
-    width: 124px;
-    height: 124px;
+    width: 108px;
+    height: 108px;
     border-radius: 32px;
     margin-bottom: 0;
     flex-shrink: 0;
