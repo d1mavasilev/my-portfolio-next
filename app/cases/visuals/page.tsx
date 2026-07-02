@@ -1,3 +1,4 @@
+import { CaseNavigation } from "@/components/case-navigation";
 import { ProjectCTA } from "@/components/project-cta";
 import { ProjectImage } from "@/components/project-image";
 import { ProjectPageShell } from "@/components/project-page-shell";
@@ -34,6 +35,7 @@ export default function VisualsPage() {
           />
         </section>
 
+        <CaseNavigation nextHref="/cases/upjob" />
         <ProjectCTA />
       </div>
     </ProjectPageShell>

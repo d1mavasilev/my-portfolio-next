@@ -405,7 +405,7 @@ section {
 /* Аватар */
 .hero-image {
     margin-bottom: var(--spacing-lg);
-    border-radius: 32px;
+    border-radius: 36px;
     overflow: hidden;
     width: 124px;
     height: 124px;
@@ -452,7 +452,7 @@ body.home.avatar-in-header .header {
 .intro-avatar {
     width: 108px;
     height: 108px;
-    border-radius: 32px;
+    border-radius: 36px;
     margin-bottom: 0;
     flex-shrink: 0;
 }

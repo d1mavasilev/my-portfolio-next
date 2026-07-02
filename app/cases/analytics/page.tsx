@@ -340,7 +340,7 @@ export default function AnalyticsPage() {
           </ul>
         </section>
 
-        <CaseNavigation nextHref="/cases/upjob" />
+        <CaseNavigation nextHref="/cases/visuals" />
         <ProjectCTA />
       </div>
     </ProjectPageShell>
