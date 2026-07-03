@@ -193,7 +193,7 @@ body.home {
 }
 
 body.home .main {
-    padding: var(--spacing-sm) 0;
+    padding: 0;
 }
 
 /* ===== РўРРџРћР“Р РђР¤РРљРђ ===== */
@@ -217,12 +217,12 @@ h6 {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 44px;
     margin-bottom: var(--spacing-md);
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: var(--spacing-md);
 }
 
@@ -236,7 +236,7 @@ h3 {
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 p {
@@ -360,7 +360,7 @@ body.home.avatar-in-header .header {
 }
 
 .subtitle {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 400;
     margin-bottom: var(--spacing-md);
     line-height: 1.4;
@@ -458,7 +458,7 @@ body.home.avatar-in-header .header {
 }
 
 .case-title {
-    margin-bottom: var(--spacing-sm);
+    margin-bottom: var(--spacing-xs);
     text-wrap: balance;
 }
 
@@ -830,11 +830,15 @@ figcaption {
     }
     
     h2 {
-        font-size: 28px;
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 18px;
     }
 
     h4 {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .case-title {
@@ -842,7 +846,7 @@ figcaption {
     }
     
     .subtitle {
-        font-size: 20px;
+        font-size: 24px;
     }
     
     body {
