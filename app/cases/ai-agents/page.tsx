@@ -15,9 +15,9 @@ export default function AiAgentsPage() {
 
         <section className="project-intro fade-in">
           <h1>Как я спроектировал AI-агентов с нуля</h1>
-          <h2 className="subtitle">
+          <h3 className="subtitle">
             Разработка и внедрение нового AI-продукта в компании, от концепции до 82% adoption в бета-версии
-          </h2>
+          </h3>
 
           <ul className="project-details">
             <li>

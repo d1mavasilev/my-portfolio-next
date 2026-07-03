@@ -15,9 +15,9 @@ export default function AnalyticsPage() {
 
         <section className="project-intro fade-in">
           <h1>Пересборка модуля аналитики и снижение нагрузки на команду в 2 раза</h1>
-          <h2 className="subtitle">
+          <h3 className="subtitle">
             Превратил фиксированные отчёты в более гибкий инструмент и добавил когортный анализ, что позволило клиентам глубже понимать свою аудиторию
-          </h2>
+          </h3>
 
           <ul className="project-details">
             <li>

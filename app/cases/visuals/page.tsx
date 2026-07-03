@@ -15,9 +15,9 @@ export default function VisualsPage() {
 
         <section className="project-intro fade-in">
           <h1>Визуалы и UI-концепты</h1>
-          <h2 className="subtitle">
+          <h3 className="subtitle">
             Здесь тренирую UI, насмотренность, руки и немного выхожу за рамки задач
-          </h2>
+          </h3>
           <ProjectImage
             src="/images/projects/uishot_alfa.png"
             alt="Уведомление от AI-ассистента Банка и выдача рекомендаций"
