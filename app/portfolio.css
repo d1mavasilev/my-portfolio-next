@@ -896,6 +896,7 @@ figcaption {
 
     .hero-card {
         margin: 0;
+        padding: var(--spacing-lg) var(--spacing-sm) var(--spacing-lg);
         border-radius: 40px;
         gap: 32px;
     }
