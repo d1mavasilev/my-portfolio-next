@@ -35,7 +35,6 @@ export default function VisualsPage() {
           />
         </section>
 
-        <CaseNavigation nextHref="/cases/upjob" />
         <ProjectCTA />
       </div>
     </ProjectPageShell>
