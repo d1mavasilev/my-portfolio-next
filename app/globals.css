@@ -276,7 +276,7 @@ body {
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
-    border-radius: 8px;
+    border-radius: 12px;
     letter-spacing: 0.02em;
     box-shadow: var(--shadow-cta-dark);
     transition-property: transform, box-shadow, background-color;
@@ -407,8 +407,8 @@ section {
     margin-bottom: var(--spacing-lg);
     border-radius: 36px;
     overflow: hidden;
-    width: 124px;
-    height: 124px;
+    width: 108px;
+    height: 108px;
     transition: opacity 0.2s ease, height 0.2s ease, margin-bottom 0.2s ease;
 }
 
@@ -443,10 +443,14 @@ body.home.avatar-in-header .header {
 .intro-top {
     display: flex;
     align-items: center;
-    height: 108px;
+    height: auto;
     gap: 32px;
     margin-bottom: var(--spacing-lg);
     flex-wrap: nowrap;
+}
+
+.intro-top .description {
+    margin: 0;
 }
 
 .intro-avatar {
@@ -481,10 +485,10 @@ body.home.avatar-in-header .header {
 .tag {
     margin: 0;
     padding: 10px 16px;
-    border-radius: 1000px;
+    border-radius: 12px;
     background: #efeff2;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.2;
     text-wrap: balance;
 }
@@ -560,7 +564,7 @@ body.home.avatar-in-header .header {
     min-height: 40px;
     padding: var(--spacing-md);
     text-decoration: none;
-    border-radius: 32px;
+    border-radius: 36px;
     transition-property: transform;
     transition-duration: 220ms;
     transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
@@ -585,7 +589,7 @@ body.home.avatar-in-header .header {
     aspect-ratio: 16 / 9;
     object-fit: cover;
     display: block;
-    border-radius: 16px;
+    border-radius: 20px;
     outline: 1px solid rgba(0, 0, 0, 0.1);
     outline-offset: -1px;
 }
@@ -694,7 +698,7 @@ body.home.avatar-in-header .header {
     height: auto;
     display: block;
     cursor: zoom-in;
-    border-radius: 16px;
+    border-radius: 24px;
 }
 
 @media (min-width: 1024px) {
@@ -868,7 +872,7 @@ figcaption {
     height: 40px;
     min-width: 40px;
     padding: 0 16px;
-    border-radius: 8px;
+    border-radius: 12px;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -969,12 +973,17 @@ figcaption {
     }
 
     .project-cta-card {
-        padding: var(--spacing-md);
+        padding: var(--spacing-lg) var(--spacing-md);
     }
 
     .header {
         padding: 12px 0;
     }
+
+    .project-image img {
+    border-radius: 16px;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -1022,7 +1031,7 @@ figcaption {
         padding: 0 12px;
         font-size: 14px;
         gap: 4px;
-        border-radius: 8px;
+        border-radius: 12px;
     }
 
     .intro-top {

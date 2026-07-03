@@ -4,6 +4,7 @@ import { HomeBehavior } from "@/components/home-behavior";
 import Link from "next/link";
 import { companies } from "../../companies";
 import { Tag } from "@/components/tag";
+import page from "@/app/cases/visuals/page";
 
 export default async function CompanyPage({ params }: { params: Promise<{ company: string }> }) {
   const { company: companySlug } = await params;
@@ -43,7 +44,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
     },
   ];
 
-  return (
+    return (
     <>
       <HomeBehavior />
 
@@ -59,33 +60,35 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
         </div>
       </header>
 
-      <main className="main">
-        <div className="container">
-          <div className="intro-top fade-in">
-            <div className="hero-image intro-avatar">
-              <img src="/images/avatar.png" alt="Ваше фото" />
-            </div>
-            <h2 className="intro-name">Дмитрий Васильев</h2>
-          </div>
+<main className="main">
+  <div className="container">
+    <div className="hero-card">
+      <div className="intro-top fade-in">
+        <div className="hero-image intro-avatar">
+          <img src="/images/avatar.png" alt="Ваше фото" />
+        </div>
+        <p className="text-muted"> Дмитрий Васильев</p>
+      </div>
 
-          <section className="intro fade-in">
-            <h2 className="subtitle">
-              {greeting} Я продуктовый дизайнер с 3+ годами опыта в B2B. Проектирую высоконагруженные интерфейсы со сложной бизнес-логикой и превращаю их в понятные UX-решения
+      <section className="intro fade-in">
+        <h2 className="subtitle">
+              {greeting} Я продуктовый дизайнер с 3+ годами опыта в B2B. Проектирую high-load интерфейсы со сложной бизнес-логикой и превращаю их в понятные UX-решения
             </h2>
             <div className="tags" aria-label="Теги">
               <Tag>AI-продукты</Tag>
               <Tag>Аналитика и Дашборды</Tag>
-              <Tag>Корпоративные интерфейсы</Tag>
+              <Tag>Корпоративный софт</Tag>
               <Tag>Внутренние web-системы</Tag>
               <Tag>Личные кабинеты и формы</Tag>
             </div>
-            <p className="description">
+            <p>
               <a href="#cases">Кейсы</a> ·{" "}
               <a href="https://drive.google.com/file/d/1Yh6jngkaE25-WkQjsd-gOAa3X-blcK65/view?usp=sharing" target="_blank" rel="noopener noreferrer">CV</a> · {" "}
               <a href="https://t.me/d_vasilev" target="_blank" rel="noopener noreferrer">Telegram</a> · {" "}
               <a href="mailto:dvasilevdesign@gmail.com" target="_blank" rel="noopener noreferrer">dvasilevdesign@gmail.com</a>
             </p>
           </section>
+          </div>
 
             <section className="approach fade-in">
               <h2>Подход</h2>
@@ -202,6 +205,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
                   </a>
                 </article>
 
+                {/*
                 <article className="case-item fade-in">
                   <a href="/cases/upjob" className="case-link">
                     <figure className="case-cover">
@@ -217,7 +221,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
                       Upjob · 2022 – 2024
                     </p>
                   </a>
-                </article>
+                </article>*/}
               </div>
             </section>
 

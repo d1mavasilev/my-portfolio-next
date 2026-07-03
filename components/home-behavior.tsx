@@ -7,6 +7,8 @@ import { setupImageLightbox } from "@/lib/setup-image-lightbox";
 export function HomeBehavior() {
   useEffect(() => {
     const body = document.body;
+    body.classList.add("home");
+
     const heroImage = document.querySelector<HTMLElement>(".hero-image");
     const header = document.querySelector<HTMLElement>(".header");
     const fadeElements = Array.from(
@@ -121,6 +123,7 @@ export function HomeBehavior() {
       });
       cleanupLightbox();
       body.classList.remove("avatar-in-header");
+      body.classList.remove("home");
     };
   }, []);
 
