@@ -55,7 +55,7 @@ export default function Home() {
         <div className="hero-image intro-avatar">
           <img src="/images/avatar.png" alt="Ваше фото" />
         </div>
-        <p> Дмитрий Васильев</p>
+        <p className="text-muted"> Дмитрий Васильев</p>
       </div>
 
       <section className="intro fade-in">
