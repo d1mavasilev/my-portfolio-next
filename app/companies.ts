@@ -33,7 +33,7 @@ export const companies: Record<string, { displayName: string; color: string }> =
   },
   raiffeisen: {
     displayName: "Райффайзен Банк",
-    color: "#FFE600",
+    color: "#e7d107",
   },
   // сюда добавляешь новые компании
 };
