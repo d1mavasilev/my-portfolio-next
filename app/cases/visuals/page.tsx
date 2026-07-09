@@ -29,6 +29,11 @@ export default function VisualsPage() {
             caption="Посадочный талон на рейс S7 Airlines"
           />
           <ProjectImage
+            src="/images/projects/uishot_portals.png"
+            alt="Путешествия по параллельным мирам"
+            caption="Путешествия по параллельным мирам"
+          />
+          <ProjectImage
             src="/images/projects/uishot_podpisnye.png"
             alt="Приложение для книжного магазина Подписные издания"
             caption="Приложение для книжного магазина Подписные издания"
