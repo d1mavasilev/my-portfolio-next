@@ -23,6 +23,10 @@ export const companies: Record<string, { displayName: string; color: string }> =
     displayName: "Ингосстрах",
     color: "#004de5",
   },
+  gazprom: {
+    displayName: "Газпром",
+    color: "#007AC2",
+  },
   bks: {
     displayName: "БКС",
     color: "#006df0",
