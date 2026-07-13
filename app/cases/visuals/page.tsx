@@ -19,22 +19,22 @@ export default function VisualsPage() {
             Здесь тренирую UI, насмотренность, руки и немного выхожу за рамки задач
           </h3>
           <ProjectImage
-            src="/images/projects/uishot_alfa.png"
+            src="/images/projects/uishot_alfa.jpg"
             alt="Уведомление от AI-ассистента Банка и выдача рекомендаций"
             caption="Уведомление от AI-ассистента Банка и выдача рекомендаций"
           />
           <ProjectImage
-            src="/images/projects/uishot_s7.png"
+            src="/images/projects/uishot_s7.jpg"
             alt="Посадочный талон на рейс S7 Airlines"
             caption="Посадочный талон на рейс S7 Airlines"
           />
           <ProjectImage
-            src="/images/projects/uishot_portals.png"
+            src="/images/projects/uishot_portals.jpg"
             alt="Путешествия по параллельным мирам"
             caption="Путешествия по параллельным мирам"
           />
           <ProjectImage
-            src="/images/projects/uishot_podpisnye.png"
+            src="/images/projects/uishot_podpisnye.jpg"
             alt="Приложение для книжного магазина Подписные издания"
             caption="Приложение для книжного магазина Подписные издания"
           />
