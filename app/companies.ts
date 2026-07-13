@@ -7,6 +7,10 @@ export const companies: Record<string, { displayName: string; color: string }> =
     displayName: "Альфа-Банк",
     color: "#ef3124",
   },
+  mts: {
+    displayName: "МТС",
+    color: "#FF0032",
+  },
   kaspersky: {
     displayName: "Лаборатория Касперского",
     color: "#009881",
