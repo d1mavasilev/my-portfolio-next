@@ -101,7 +101,10 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
             <h2>Опыт</h2>
             <ul>
               <li>
-                <strong>Андата · Product Designer</strong> · Фев 2024 – Июнь 2026
+                <h4 style={{ marginBottom: 'var(--spacing-xs)' }}>Андата · Product Designer</h4>
+                <p style={{ marginBottom: 'var(--spacing-xs)' }}>
+                Фев 2024 – Июнь 2026
+              </p>
                 <p className="experience-description text-muted">
                   B2B SaaS-платформа для оптимизации маркетинга (аналитика,
                   реклама, AI-инструменты).
@@ -125,7 +128,11 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
                 </ul>
               </li>
               <li>
-                <strong>Upjob · Product Designer</strong> · Нояб 2022 – Янв 2024
+
+                <h4 style={{ marginBottom: 'var(--spacing-xs)' }}>Upjob · Product Designer</h4>
+                <p style={{ marginBottom: 'var(--spacing-xs)' }}>
+                Нояб 2022 – Янв 2024
+              </p>
                 <p className="experience-description text-muted">
                   Job-платформа для рынка Таиланда (MVP).
                 </p>
