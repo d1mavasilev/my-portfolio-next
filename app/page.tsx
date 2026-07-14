@@ -149,7 +149,7 @@ export default function Home() {
                   <a href="/cases/ai-agents" className="case-link">
                     <figure className="case-cover">
                       <img
-                        src="/images/projects/Cover_agents.png"
+                        src="/images/projects/Cover_agents.jpg"
                         alt="Превью кейса AI агентов"
                       />
                     </figure>
@@ -166,7 +166,7 @@ export default function Home() {
                   <a href="/cases/analytics" className="case-link">
                     <figure className="case-cover">
                       <img
-                        src="/images/projects/Cover_analytics.png"
+                        src="/images/projects/Cover_analytics.jpg"
                         alt="Превью кейса аналитики"
                       />
                     </figure>
@@ -184,7 +184,7 @@ export default function Home() {
                   <a href="/cases/visuals" className="case-link">
                     <figure className="case-cover">
                       <img
-                        src="/images/projects/Cover_visuals.png"
+                        src="/images/projects/Cover_visuals.jpg"
                         alt="Превью визуалов и UI-концептов"
                       />
                     </figure>
