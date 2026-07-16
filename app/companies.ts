@@ -51,6 +51,10 @@ export const companies: Record<string, { displayName: string; color: string }> =
     displayName: "Райффайзен Банк",
     color: "#f3db05",
   },
+  tbank: {
+    displayName: "Т-Банк",
+    color: "#f3db05",
+  },
   yandex: {
     displayName: "Яндекс",
     color: "#FC3F1D",
