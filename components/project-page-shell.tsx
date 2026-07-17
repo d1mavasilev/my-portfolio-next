@@ -34,7 +34,6 @@ export function ProjectPageShell({ children }: ProjectPageShellProps) {
             <a href="mailto:dvasilevdesign@gmail.com">
               dvasilevdesign@gmail.com
             </a>{" "}
-            ·
           </p>
         </div>
       </footer>
