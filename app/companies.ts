@@ -59,5 +59,9 @@ export const companies: Record<string, { displayName: string; color: string }> =
     displayName: "Яндекс",
     color: "#FC3F1D",
   },
+  yoomoney: {
+    displayName: "ЮMoney",
+    color: "#702FF4",
+  },
   // сюда добавляешь новые компании
 };
