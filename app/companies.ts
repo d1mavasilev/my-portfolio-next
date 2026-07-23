@@ -27,6 +27,10 @@ export const companies: Record<string, { displayName: string; color: string }> =
     displayName: "X5",
     color: "#5FAF2D",
   },
+  magnit: {
+    displayName: "Магнит",
+    color: "#EB1000",
+  },
   atb: {
     displayName: "АТБ",
     color: "#fe5000",
