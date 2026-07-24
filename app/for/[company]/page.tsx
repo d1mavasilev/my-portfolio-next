@@ -67,11 +67,11 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
         <div className="hero-image intro-avatar">
           <img src="/images/avatar.png" alt="Ваше фото" />
         </div>
-        <p className="text-muted"> Дмитрий Васильев</p>
+        <p className="text-muted">Дмитрий Васильев</p>
       </div>
 
       <section className="intro fade-in">
-        <h2 className="subtitle">
+        <h2>
               {greeting} Я продуктовый дизайнер с 3+ годами опыта в B2B. Проектирую high-load интерфейсы со сложной бизнес-логикой и превращаю их в понятные UX-решения
             </h2>
             <div className="tags" aria-label="Теги">
@@ -92,8 +92,8 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
 
             <section className="approach fade-in">
               <h2>Подход</h2>
-              <p>
-                Проектирую с фокусом на измеримый результат: оцениваю, как решения влияют на воронку и нагрузку на поддержку. Понимаю потребности бизнеса, прорабатываю сценарии учитывая корнер-кейсы, что снижает стоимость разработки и сокращает time to market.
+              <p className="experience-description text-muted">
+                Имею опыт полного цикла разработки нового продукта от UX-исследований до релиза. Понимаю потребности бизнеса, аргументирую дизайн-решения через данные и бизнес-метрики, прорабатываю сценарии учитывая корнер-кейсы, что снижает стоимость разработки и сокращает time to market.
               </p>
             </section>
 
