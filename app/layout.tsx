@@ -22,18 +22,18 @@ const onest = Onest({
 export const metadata: Metadata = {
   metadataBase: new URL("https://dvasilevdesign.vercel.app"),
 
-  title: "Дмитрий Васильев – Product designer",
-  description: "Портфолио продуктового дизайнера",
+  title: "Product designer · B2B · B2C",
+  description: "Портфолио и кейсы",
 
   openGraph: {
-    title: "Дмитрий Васильев – Product designer",
-    description: "Проектирую высоконагруженные интерфейсы, дашборды, AI-продукты, корпоративные системы и личные кабинеты",
+    title: "Product designer · B2B · B2C",
+    description: "Разрабатываю high-load интерфейсы со сложной бизнес-логикой: AI-продукты, внутренние web-системы, аналитика и дашборды, личные кабинеты и формы, корпоративные продукты",
     images: [
       {
         url: "/portfolio_ogimage.jpg",
         width: 1200,
         height: 630,
-        alt: "Дмитрий Васильев – Product designer",
+        alt: "Product designer · B2B · B2C",
       },
     ],
     type: "website",
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Дмитрий Васильев – Product designer",
-    description: "Проектирую высоконагруженные интерфейсы, дашборды, AI-продукты, корпоративные системы и личные кабинеты",
+    title: "Product designer · B2B · B2C",
+    description: "Разрабатываю high-load интерфейсы со сложной бизнес-логикой: AI-продукты, внутренние web-системы, аналитика и дашборды, личные кабинеты и формы, корпоративные продукты",
     images: ["/portfolio_ogimage.jpg"],
   },
 };
