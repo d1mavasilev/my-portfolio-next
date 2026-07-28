@@ -3,6 +3,10 @@ export const companies: Record<string, { displayName: string; color: string }> =
     displayName: "OZON",
     color: "#005BFF",
   },
+  wb: {
+    displayName: "Wildberries",
+    color: "#A73AFD",
+  },
   alfabank: {
     displayName: "Альфа-Банк",
     color: "#ef3124",
