@@ -1,10 +1,12 @@
 import { FreeTimeGallery } from "@/components/free-time-gallery";
 import { HeaderActions } from "@/components/header-actions";
 import { HomeBehavior } from "@/components/home-behavior";
-import Link from "next/link";
+import { CasesIcon } from "@/components/icons/cases-icon";
+import { ContactsIcon } from "@/components/icons/contacts-icon";
+import { CvIcon } from "@/components/icons/cv-icon";
 import { companies } from "../../companies";
 import { Tag } from "@/components/tag";
-import page from "@/app/cases/visuals/page";
+import Link from "next/link";
 
 export default async function CompanyPage({ params }: { params: Promise<{ company: string }> }) {
   const { company: companySlug } = await params;
@@ -17,6 +19,26 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
     <>Привет!</>
   );
 
+    const quickActions = [
+    {
+      href: "https://drive.google.com/file/d/1Yh6jngkaE25-WkQjsd-gOAa3X-blcK65/view?usp=sharing",
+      label: "Резюме",
+      icon: <CvIcon size={20} className="header-cta-icon-svg" aria-hidden="true" />,
+      target: "_blank",
+      rel: "noopener noreferrer",
+    },
+    {
+      href: "#cases",
+      label: "Кейсы",
+      icon: <CasesIcon size={20} className="header-cta-icon-svg" aria-hidden="true" />,
+    },
+    {
+      href: "#contacts",
+      label: "Контакты",
+      icon: <ContactsIcon size={20} className="header-cta-icon-svg" aria-hidden="true" />,
+    },
+  ] as const;
+  
   const freeTimePhotos = [
     {
       src: "/images/Freetime_1.png",
@@ -44,7 +66,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
     },
   ];
 
-    return (
+  return (
     <>
       <HomeBehavior />
 
@@ -72,7 +94,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
 
       <section className="intro fade-in">
         <h2>
-              {greeting} Я продуктовый дизайнер с 3+ годами опыта в B2B. Проектирую high-load интерфейсы со сложной бизнес-логикой и превращаю их в понятные UX-решения
+              {greeting} Я продуктовый дизайнер с 3+ годами опыта в B2B и B2C. Проектирую продукты с большим объёмом данных и сложными сценариями
             </h2>
             <div className="tags" aria-label="Теги">
               <Tag>AI-продукты</Tag>
@@ -81,23 +103,36 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
               <Tag>Внутренние web-системы</Tag>
               <Tag>Личные кабинеты и формы</Tag>
             </div>
-            <p>
-              <a href="#cases">Кейсы</a> ·{" "}
-              <a href="https://drive.google.com/file/d/1Yh6jngkaE25-WkQjsd-gOAa3X-blcK65/view?usp=sharing" target="_blank" rel="noopener noreferrer">CV</a> · {" "}
-              <a href="https://t.me/d_vasilev" target="_blank" rel="noopener noreferrer">Telegram</a> · {" "}
-              <a href="mailto:dvasilevdesign@gmail.com" target="_blank" rel="noopener noreferrer">dvasilevdesign@gmail.com</a>
-            </p>
+            <div className="header-actions" aria-label="Быстрые кнопки">
+              {quickActions.map(({ icon, label, ...linkProps }) => (
+                <a
+                  key={label}
+                  className="header-cta header-cta-secondary header-cta-with-icon header-cta-intro"
+                  {...linkProps}
+                >
+                  {icon ? (
+                    <span aria-hidden="true" className="header-cta-icon">
+                      {icon}
+                    </span>
+                  ) : null}
+                  <span className="header-cta-label">{label}</span>
+                </a>
+              ))}
+            </div>
           </section>
           </div>
 
-            <section className="approach fade-in">
+            <section className="approach card-section fade-in">
               <h2>Подход</h2>
               <p className="experience-description text-muted">
-                Имею опыт полного цикла разработки нового продукта от UX-исследований до релиза. Понимаю потребности бизнеса, аргументирую дизайн-решения через данные и бизнес-метрики, прорабатываю сценарии учитывая корнер-кейсы, что снижает стоимость разработки и сокращает time to market.
+                Веду разработку продукта полным циклом от UX-исследований и гипотез, до релиза и последующей оптимизации. Дизайн-решения аргументирую через данные и бизнес-метрики. Развиваю дизайн-системы и описываю механики сценариев на языке понятном разработке и продакту.
+              </p>
+              <p className="experience-description text-muted">
+                AI-инструменты встроены в мой ежедневный рабочий процесс для ускорения исследований и обобщения результатов, быстрого прототипирования, UX-текстов и креативов.
               </p>
             </section>
 
-          <section className="experience fade-in">
+          <section className="experience card-section fade-in">
             <h2>Опыт</h2>
             <ul>
               <li>
@@ -111,19 +146,19 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
                 </p>
                 <ul className="pl-5 space-y-1 text-muted" style={{ listStyleType: '"✦ "' }}>
                   <li>
-                    Спроектировал с нуля раздел AI-агентов и обеспечил adoption 82% среди 50 SMB-клиентов бета-теста, которые создали первого агента в первую неделю. Метрика легла в основу решения о релизе фичи.
+                    Разработал с нуля MVP раздела AI-агентов: 82% среди 50 SMB-клиентов бета-теста, создали первого агента в первую неделю. Метрика легла в основу решения о релизе фичи.
                   </li>
                   <li>
-                    Сократил время создания отчётов в 5.6 раза, вдвое снизил количество обращений в поддержку по кастомным отчётам и освободил ресурс команды под другие задачи, проведя полный редизайн раздела аналитики.
+                    Сократил время создания отчётов в 5.6 раза, вдвое снизил количество обращений в поддержку и освободил ресурс команды под другие задачи, проведя редизайн раздела аналитики.
                   </li>
                   <li>
-                    Спроектировал и запустил новый раздел когортного анализа. 64% крупных клиентов создали 2 и более когорты в первый месяц после релиза без обучения и онбординга.
+                    Спроектировал новый раздел когортного анализа: 64% крупных клиентов создали 2+ когорты в первый месяц после релиза.
                   </li>
                   <li>
                     Снизил точки падения конверсии и повысил общее качество UX, оптимизировав продуктовый flow на основе юзабилити-тестирования, глубинных интервью и конкурентного анализа.
                   </li>
                   <li>
-                    Повысил эффективность продуктовых процессов и сократил время на типовые и новые задачи, за счет развития дизайн-системы. Добавил 10+ новых компонентов, описал документацию и паттерны, снизил количество правок перед продакшеном с 3–5 до 2.
+                    Повысил эффективность процессов и сократил время на типовые и новые задачи, за счет развития дизайн-системы. Добавил 10+ новых компонентов, описал документацию и паттерны, снизил количество правок перед продакшеном.
                   </li>
                 </ul>
               </li>
@@ -153,11 +188,17 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
 
           <div id="about">
             <section className="cases">
-              <h2 id="cases" className="cases-heading fade-in">
-                Кейсы
+              <h2
+                id="cases"
+                className="cases-heading cases-heading-home fade-in"
+                style={{
+                  padding: '0 clamp(var(--spacing-md), 5vw, var(--spacing-lg)) 0',
+                }}
+               >
+               Кейсы
               </h2>
-              <div className="case-list">
-                <article className="case-item fade-in">
+              <div className="case-list case-list-home">
+                <article className="case-item case-item-home fade-in">
                   <a href="/cases/ai-agents" className="case-link">
                     <figure className="case-cover">
                       <img
@@ -165,16 +206,18 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
                         alt="Превью кейса AI агентов"
                       />
                     </figure>
-                    <h4 className="case-title">
-                      Как я спроектировал AI-агентов с нуля
-                    </h4>
-                    <p className="case-description">
-                      Андата · 2024 – 2026
-                    </p>
+                    <div className="case-content case-content-home">
+                      <h4 className="case-title">
+                        Как спроектировал AI-агентов с нуля
+                      </h4>
+                      <p className="case-description">
+                        Андата · 2024 – 2026
+                      </p>
+                    </div>
                   </a>
                 </article>
 
-                <article className="case-item fade-in">
+                <article className="case-item case-item-home fade-in">
                   <a href="/cases/analytics" className="case-link">
                     <figure className="case-cover">
                       <img
@@ -182,17 +225,18 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
                         alt="Превью кейса аналитики"
                       />
                     </figure>
-                    <h4 className="case-title">
-                      Пересборка модуля аналитики и снижение нагрузки на команду
-                      в 2 раза
-                    </h4>
-                    <p className="case-description">
-                      Андата · 2024 – 2026
-                    </p>
+                    <div className="case-content case-content-home">
+                      <h4 className="case-title">
+                        Редизайн модуля аналитики и снижение нагрузки на команду в 2 раза
+                      </h4>
+                      <p className="case-description">
+                        Андата · 2024 – 2026
+                      </p>
+                    </div>
                   </a>
                 </article>
 
-                <article className="case-item fade-in">
+                <article className="case-item case-item-home fade-in">
                   <a href="/cases/visuals" className="case-link">
                     <figure className="case-cover">
                       <img
@@ -200,12 +244,14 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
                         alt="Превью визуалов и UI-концептов"
                       />
                     </figure>
-                    <h4 className="case-title">
-                      Визуалы и UI-концепты
-                    </h4>
-                    <p className="case-description">
-                      2025 – 2026
-                    </p>
+                    <div className="case-content case-content-home">
+                      <h4 className="case-title">
+                        Визуалы и UI-концепты
+                      </h4>
+                      <p className="case-description">
+                        2025 – 2026
+                      </p>
+                    </div>
                   </a>
                 </article>
 
@@ -229,39 +275,47 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
               </div>
             </section>
 
-          <section className="skills fade-in">
+          <section className="skills card-section fade-in">
             <h2>Навыки</h2>
             <p>
-              <strong>Экспертиза в UX и дизайне:</strong> <span className="text-muted">Продуктовое мышление · Информационная архитектура · UX исследования · User Flow · User Story Mapping · Card Sorting · Информационная архитектура · JTBD · CJM · Глубинные интервью · Юзабилити-тестирование · Вайрфреймы · Прототипирование · Дизайн-системы · A/B-тесты · Дизайн ревью</span>
+              <strong>Экспертиза в UX и дизайне:</strong> <span className="text-muted">Дизайн-системы и UI-kit | Информационная архитектура | UX-исследования | User Flow | JTBD | Глубинные интервью | Юзабилити-тестирование | Вайрфреймы | Прототипы | A/B-тесты | Дизайн-ревью | Material 3 & HIG</span>
             </p>
             <p>
-              <strong>Инструменты, ПО и технологии:</strong> <span className="text-muted">Figma (advanced: auto layout, variants, components, variables) · AI-инструменты, VS Code + Codex/Claude, для ускорения ресерча, прототипирования, UX-текстов и креативов · Protopie · Jira · Notion · Miro · HTML/CSS · Material 3 & HIG</span>
+              <strong>Инструменты, ПО и технологии:</strong> <span className="text-muted">Figma (advanced: auto layout, variants, components, variables) | AI-инструменты, VS Code + Codex/Claude, для ускорения исследований и обобщения результатов, быстрого прототипирования, UX-текстов и креативов | HTML, CSS, JavaScript/React | Git | Jira | Notion | Miro</span>
             </p>
             <p>
               <strong>Документация:</strong> <span className="text-muted">описываю спецификации и механики сценариев на языке понятном разработке и продакту в Figma, Notion, Git и Confluence</span>
             </p>
           </section>
 
-          <section className="free-time fade-in">
+          <section className="free-time card-section fade-in">
             <h2>В свободное время</h2>
-            <p>
+            <p className="experience-description text-muted">
               Путешествую - придумываю что-то необычное и захватывающее, снимаю
-              стрит-фото, увлекаюсь гастрономией и бегом. Читаю NNGroup, Medium,
+              стрит-фото, смотрю Формулу 1, увлекаюсь гастрономией и бегом. Читаю NNGroup, Medium,
               Телеграм Ozon Design, Dodo Mobile, Avito Tech. Учу английский
               (цель уровень B2+).
             </p>
             <FreeTimeGallery photos={freeTimePhotos} />
           </section>
 
-          <section className="contacts fade-in">
-            <h2>Контакты</h2>
-            <p>
-              Давайте работать вместе! Напишите мне, с удовольствием отвечу и обсудим, как могу помочь вам и вашему проекту.{" "}
-              <a href="https://t.me/d_vasilev" target="_blank" rel="noopener noreferrer">Telegram</a>,{" "}
-              <a href="mailto:dvasilevdesign@gmail.com">
-                dvasilevdesign@gmail.com
-              </a>
-            </p>
+          <section id="contacts" className="contacts project-cta fade-in">
+            <div className="project-cta-card">
+              <h2>Контакты</h2>
+              <p className="project-cta-text">
+                Открыт для вакансий продуктового дизайнера в сегментах B2B и B2C. Напишите в Telegram или на dvasilevdesign@gmail.com
+              </p>
+              <div className="project-cta-actions">
+                <a
+                  className="project-cta-btn primary project-cta-btn-lg"
+                  href="https://t.me/d_vasilev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Написать в Telegram
+                </a>
+              </div>
+            </div>
           </section>
           </div>
         </div>
@@ -275,10 +329,10 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
             <a href="mailto:dvasilevdesign@gmail.com">
               dvasilevdesign@gmail.com
             </a>{" "}
-            ·
           </p>
         </div>
       </footer>
     </>
   );
 }
+

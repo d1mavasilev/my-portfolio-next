@@ -9,7 +9,7 @@ export function HeaderActions() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        CV
+        Резюме
       </a>
       <a
         className="header-cta"

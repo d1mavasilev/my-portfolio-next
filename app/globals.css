@@ -201,7 +201,7 @@ body {
 .container {
     max-width: var(--container-width);
     margin: 0 auto;
-    padding: 0 var(--spacing-md);
+    padding: 0;
 }
 
 /* ===== ШАПКА ===== */
@@ -289,6 +289,42 @@ body {
     background-color: #ffffff;
     color: #000000;
     box-shadow: var(--shadow-cta-light);
+}
+
+.header-cta-intro {
+    height: 48px;
+    min-width: 48px;
+    padding: 0 16px;
+    font-size: 18px;
+    border-radius: 16px;
+}
+
+.header-cta-with-icon {
+    gap: 8px;
+}
+
+.header-cta-intro .header-cta-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.header-cta-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+
+.header-cta-icon-svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.header-cta-label {
+    line-height: 1;
 }
 
 .header-cta:hover {
@@ -543,6 +579,7 @@ body.home.avatar-in-header .header {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-md);
+    margin: 0;
 }
 
 .case-item {
@@ -555,9 +592,20 @@ body.home.avatar-in-header .header {
     will-change: transform;
 }
 
+.case-item-home {
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
 .case-item:hover {
     transform: translateY(-2px);
     box-shadow: var(--shadow-border-hover);
+}
+
+.case-item-home:hover {
+    transform: none;
+    box-shadow: none;
 }
 
 .case-link {
@@ -569,6 +617,10 @@ body.home.avatar-in-header .header {
     transition-property: transform;
     transition-duration: 220ms;
     transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+.case-item-home .case-link {
+    padding: 0;
 }
 
 .case-link:active {
@@ -595,8 +647,22 @@ body.home.avatar-in-header .header {
     outline-offset: -1px;
 }
 
+.case-item-home .case-cover {
+    margin-bottom: 0;
+}
+
+.case-item-home .case-cover img {
+    border-radius: 32px;
+    outline: none;
+    outline-offset: 0;
+}
+
+.case-content-home {
+    padding: var(--spacing-sm) var(--spacing-lg) 0;
+}
+
 .case-title {
-    margin-bottom: var(--spacing-xs);
+    margin-bottom: var(--spacing-md);
     text-wrap: balance;
 }
 
@@ -840,7 +906,7 @@ figcaption {
 .project-cta-card {
     background-color: #2c2c2b;
     color: #ffffff;
-    border-radius: 24px;
+    border-radius: 48px;
     padding: var(--spacing-lg);
     display: flex;
     flex-direction: column;
@@ -889,6 +955,14 @@ figcaption {
     color: #0b0b0b;
 }
 
+.project-cta-btn-lg {
+    height: 48px;
+    min-width: 48px;
+    padding: 0 16px;
+    font-size: 18px;
+    border-radius: 16px;
+}
+
 .project-cta-btn:hover {
     transform: translateY(-1px);
     box-shadow: var(--shadow-cta-light-hover);
@@ -930,6 +1004,10 @@ figcaption {
 /* ===== АДАПТИВНОСТЬ ===== */
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
     .header .container {
         flex-wrap: nowrap;
     }
@@ -983,6 +1061,15 @@ figcaption {
 
     .project-cta-card {
         padding: var(--spacing-lg) var(--spacing-md);
+        border-radius: 36px;
+    }
+
+    .case-item-home .case-cover img {
+        border-radius: 24px;
+    }
+
+    .case-content-home {
+        padding: var(--spacing-sm) var(--spacing-md) 0;
     }
 
     .header {
@@ -1039,8 +1126,29 @@ figcaption {
         min-width: 32px;
         padding: 0 12px;
         font-size: 14px;
-        gap: 4px;
         border-radius: 12px;
+    }
+
+    .header-cta-with-icon {
+        gap: 4px;
+    }
+
+    .header-cta-intro {
+        height: 32px;
+        min-width: 32px;
+        padding: 0 12px;
+        font-size: 14px;
+        border-radius: 12px;
+    }
+
+    .header-cta-intro .header-cta-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .header-cta-icon {
+        width: 16px;
+        height: 16px;
     }
 
     .intro-top {
@@ -1074,6 +1182,14 @@ figcaption {
     .project-cta-btn {
         width: auto;
         align-self: center;
+    }
+
+    .project-cta-btn-lg {
+        height: 40px;
+        min-width: 40px;
+        padding: 0 16px;
+        font-size: 16px;
+        border-radius: 12px;
     }
 
     .tags {
