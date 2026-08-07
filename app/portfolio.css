@@ -81,7 +81,6 @@ body.home {
     top: 0;
     background-color: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--color-border);
     z-index: 100;
     padding: var(--spacing-sm) 0;
     transition: opacity 0.25s ease;
@@ -866,7 +865,6 @@ figcaption {
 
 .footer {
     padding: var(--spacing-lg) 0;
-    border-top: 1px solid var(--color-border);
     margin-top: var(--spacing-md);
 }
 
