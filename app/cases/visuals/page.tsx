@@ -19,6 +19,11 @@ export default function VisualsPage() {
             Здесь тренирую UI, насмотренность, руки и немного выхожу за рамки задач
           </h3>
           <ProjectImage
+            src="/images/projects/uishot_ozon.jpg"
+            alt="AI-summary непрочитанных сообщений в корпоративном мессенджере"
+            caption="AI-summary непрочитанных сообщений в корпоративном мессенджере"
+          />
+          <ProjectImage
             src="/images/projects/uishot_alfa.jpg"
             alt="Уведомление от AI-ассистента Банка и выдача рекомендаций"
             caption="Уведомление от AI-ассистента Банка и выдача рекомендаций"
