@@ -20,8 +20,8 @@ export default function VisualsPage() {
           </h3>
           <ProjectImage
             src="/images/projects/uishot_ozon.jpg"
-            alt="AI-summary непрочитанных сообщений в корпоративном мессенджере"
-            caption="AI-summary непрочитанных сообщений в корпоративном мессенджере"
+            alt="AI-summarization непрочитанных сообщений в корпоративном мессенджере"
+            caption="AI-summarization непрочитанных сообщений в корпоративном мессенджере"
           />
           <ProjectImage
             src="/images/projects/uishot_alfa.jpg"
