@@ -230,12 +230,12 @@ export default function Home() {
                     <figure className="case-cover">
                       <img
                         src="/images/projects/Cover_visuals.jpg"
-                        alt="Превью визуалов и UI-концептов"
+                        alt="Превью UI-шотов и концептов"
                       />
                     </figure>
                     <div className="case-content case-content-home">
                       <h4 className="case-title">
-                        Визуалы и UI-концепты
+                        UI-шоты и концепты
                       </h4>
                       <p className="case-description">
                         2025 – 2026

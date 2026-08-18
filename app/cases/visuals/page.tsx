@@ -9,14 +9,14 @@ export default function VisualsPage() {
       <div className="container">
         <div>
           <p className="project-meta">
-            Визуалы и UI-концепты · 2025 - 2026
+            UI-шоты и концепты · 2025 - 2026
           </p>
         </div>
 
         <section className="project-intro fade-in">
-          <h1>Визуалы и UI-концепты</h1>
+          <h1>UI-шоты и концепты</h1>
           <h3 className="subtitle">
-            Здесь тренирую UI, насмотренность, руки и немного выхожу за рамки задач
+            Здесь тренирую UI, насмотренность, руки и выхожу за рамки задач
           </h3>
           <ProjectImage
             src="/images/projects/uishot_messenger_desktop.jpg"
