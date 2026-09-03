@@ -903,7 +903,10 @@ figcaption {
 }
 
 .project-cta-card {
-    background-color: #2c2c2b;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background-color: #0b0b0b;
     color: #ffffff;
     border-radius: 48px;
     padding: var(--spacing-lg);
@@ -911,6 +914,29 @@ figcaption {
     flex-direction: column;
     align-items: center;
     gap: var(--spacing-sm);
+}
+
+.project-cta-background {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.72;
+}
+
+.project-cta-background canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project-cta-card > h2,
+.project-cta-card > h3,
+.project-cta-card > .project-cta-text,
+.project-cta-card > .project-cta-actions {
+    position: relative;
+    z-index: 1;
 }
 
 .project-cta-card h3 {
