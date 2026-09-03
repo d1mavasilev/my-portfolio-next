@@ -4,7 +4,6 @@ import { HomeBehavior } from "@/components/home-behavior";
 import { CasesIcon } from "@/components/icons/cases-icon";
 import { ContactsIcon } from "@/components/icons/contacts-icon";
 import { CvIcon } from "@/components/icons/cv-icon";
-import FaultyTerminal from "@/components/FaultyTerminal";
 import { Tag } from "@/components/tag";
 import Link from "next/link";
 
@@ -291,7 +290,6 @@ export default function Home() {
 
           <section id="contacts" className="contacts project-cta fade-in">
             <div className="project-cta-card">
-              <FaultyTerminal className="project-cta-background" tint="#d7d7d7" gridMul={[2, 1.2]} digitSize={1.8} scanlineIntensity={0.22} noiseAmp={0.7} mouseReact={true} pageLoadAnimation={false} fit="cover" />
               <h2>Контакты</h2>
               <p className="project-cta-text">
                 Открыт для вакансий продуктового дизайнера в сегментах B2B и B2C. Напишите в Telegram или на dvasilevdesign@gmail.com
