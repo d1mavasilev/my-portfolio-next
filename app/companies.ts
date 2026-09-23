@@ -71,5 +71,17 @@ export const companies: Record<string, { displayName: string; color: string }> =
     displayName: "ЮMoney",
     color: "#702FF4",
   },
+  halykbank: {
+    displayName: "Halyk Bank",
+    color: "#00805F",
+  },
+  kaspi: {
+    displayName: "Kaspi.kz",
+    color: "#F14635",
+  },
+  homecreditbank: {
+    displayName: "Home Credit Bank",
+    color: "#DC0A28",
+  },
   // сюда добавляешь новые компании
 };
