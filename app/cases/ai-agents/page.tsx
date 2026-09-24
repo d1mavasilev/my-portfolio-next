@@ -102,8 +102,8 @@ export default function AiAgentsPage() {
             Создал первые прототипы и провел юзабилити-тесты удобства использования основных сценариев на 5 пользователях. Смотрел на реакцию, выполнение задач и их впечатления.
           </p>
           <ProjectImage
-            src="/images/projects/Screen_agents_tests.png"
-            alt="Тесты"
+            src="/images/projects/Screen_agents_usabilitytest.png"
+            alt="Юзабилити тест"
           />
 
           <h3>Решение</h3>
