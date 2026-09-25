@@ -83,5 +83,9 @@ export const companies: Record<string, { displayName: string; color: string }> =
     displayName: "Home Credit Bank",
     color: "#DC0A28",
   },
+  rekassa: {
+    displayName: "re:Kassa",
+    color: "#00E673",
+  },
   // сюда добавляешь новые компании
 };
