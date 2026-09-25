@@ -85,7 +85,7 @@ export const companies: Record<string, { displayName: string; color: string }> =
   },
   rekassa: {
     displayName: "re:Kassa",
-    color: "#00E673",
+    color: "#00E674",
   },
   // сюда добавляешь новые компании
 };
