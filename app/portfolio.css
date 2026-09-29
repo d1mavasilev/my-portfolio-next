@@ -219,6 +219,242 @@ body.home {
     color: #ffffff;
 }
 
+/* CONTACTS MODAL */
+.contact-modal-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(8px);
+}
+
+.contact-modal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: min(640px, 100%);
+    padding: 56px 56px 52px;
+    border-radius: 48px;
+    background: #ffffff;
+    color: #191919;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.16), 0 3px 12px rgba(0, 0, 0, 0.08);
+    will-change: transform, opacity;
+}
+
+.contact-modal h2 {
+    margin: 0 0 32px;
+    color: #191919;
+    font-size: 28px;
+    line-height: 1.1;
+    letter-spacing: -0.04em;
+    text-wrap: balance;
+}
+
+.contact-modal-close {
+    position: absolute;
+    top: 48px;
+    right: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border: 0;
+    border-radius: 12px;
+    background: transparent;
+    color: #000000;
+    cursor: pointer;
+    transition-property: background-color, transform;
+    transition-duration: 180ms;
+    transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+.contact-modal-close:hover {
+    background: #f0f0f0;
+}
+
+.contact-modal-close:active {
+    transform: scale(0.96);
+}
+
+.contact-modal-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact-modal .contact-modal-telegram-cta {
+    display: none;
+}
+
+.contact-modal-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 64px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    text-align: left;
+    text-decoration: none;
+}
+
+.contact-modal-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 56px;
+    width: 56px;
+    height: 56px;
+    margin-right: 20px;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: var(--shadow-border);
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+    transition-property: background-color, transform, box-shadow;
+    transition-duration: 180ms;
+    transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+.contact-modal-icon:hover {
+    background: #f7f7f7;
+    box-shadow: var(--shadow-border-hover);
+}
+
+.contact-modal-icon:active {
+    transform: scale(0.96);
+}
+
+.contact-modal-copy {
+    display: flex;
+    min-width: 0;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contact-modal-label,
+.contact-modal-value {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.contact-modal-label {
+    color: #777777;
+    font-size: 18px;
+    line-height: 1.1;
+}
+
+.contact-modal-value {
+    color: #262626;
+    font-size: 18px;
+    line-height: 1.1;
+}
+
+.contact-modal-copy-icon {
+    position: relative;
+}
+
+.contact-icon-layer {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: opacity, transform, filter;
+    transition-duration: 240ms;
+    transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+}
+
+.contact-icon-layer.is-visible {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+}
+
+.contact-icon-layer.is-hidden {
+    opacity: 0;
+    transform: scale(0.25);
+    filter: blur(4px);
+}
+
+@media (max-width: 768px) {
+    .contact-modal-backdrop {
+        align-items: flex-end;
+        padding: 0;
+    }
+
+    .contact-modal {
+        width: 100%;
+        height: 400px;
+        padding: 32px 32px var(--spacing-lg);
+        border-radius: 36px 36px 0 0;
+    }
+
+    .contact-modal-close {
+        top: 28px;
+        right: 28px;
+    }
+
+    .contact-modal h2 {
+        margin-bottom: 32px;
+        font-size: 24px;
+    }
+
+    .contact-modal-label,
+    .contact-modal-value {
+        font-size: 16px;
+    }
+
+    .contact-modal-icon {
+        flex-basis: 48px;
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+    }
+
+    .contact-modal .contact-modal-telegram-cta {
+        display: inline-flex;
+        width: 100%;
+        height: 48px;
+        margin-top: auto;
+        background: #2c2c2b;
+        color: #ffffff;
+        border-radius: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-modal-backdrop {
+        padding: 0;
+    }
+
+    .contact-modal {
+        padding: 32px 32px var(--spacing-lg);
+        border-radius: 28px 28px 0 0;
+    }
+
+    .contact-modal-icon {
+        flex-basis: 48px;
+        width: 48px;
+        height: 48px;
+        margin-right: 16px;
+        border-radius: 12px;
+    }
+
+    .contact-modal-label,
+    .contact-modal-value {
+        font-size: 18px;
+    }
+}
+
 /* ===== РћРЎРќРћР’РќРћР™ РљРћРќРўР•РќРў ===== */
 
 .main {
