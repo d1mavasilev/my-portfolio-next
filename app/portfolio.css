@@ -237,7 +237,7 @@ body.home {
     display: flex;
     flex-direction: column;
     width: min(640px, 100%);
-    padding: 56px 56px 52px;
+    padding: 48px 48px 44px;
     border-radius: 48px;
     background: #ffffff;
     color: #191919;
@@ -267,7 +267,7 @@ body.home {
     border: 0;
     border-radius: 12px;
     background: transparent;
-    color: #000000;
+    color: #191919;
     cursor: pointer;
     transition-property: background-color, transform;
     transition-duration: 180ms;
@@ -285,7 +285,7 @@ body.home {
 .contact-modal-list {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
 }
 
 .contact-modal .contact-modal-telegram-cta {
@@ -406,6 +406,10 @@ body.home {
     .contact-modal h2 {
         margin-bottom: 32px;
         font-size: 24px;
+    }
+
+    .contact-modal-list {
+        gap: 12px;
     }
 
     .contact-modal-label,

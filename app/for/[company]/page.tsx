@@ -4,6 +4,7 @@ import { HomeBehavior } from "@/components/home-behavior";
 import { CasesIcon } from "@/components/icons/cases-icon";
 import { ContactsIcon } from "@/components/icons/contacts-icon";
 import { CvIcon } from "@/components/icons/cv-icon";
+import { ContactModal } from "@/components/contact-modal";
 import { companies } from "../../companies";
 import { Tag } from "@/components/tag";
 import Link from "next/link";
@@ -104,20 +105,32 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
               <Tag>Личные кабинеты и формы</Tag>
             </div>
             <div className="header-actions" aria-label="Быстрые кнопки">
-              {quickActions.map(({ icon, label, ...linkProps }) => (
-                <a
-                  key={label}
-                  className="header-cta header-cta-secondary header-cta-with-icon header-cta-intro"
-                  {...linkProps}
-                >
-                  {icon ? (
-                    <span aria-hidden="true" className="header-cta-icon">
-                      {icon}
-                    </span>
-                  ) : null}
-                  <span className="header-cta-label">{label}</span>
-                </a>
-              ))}
+              {quickActions.map(({ icon, label, ...linkProps }) =>
+                label === "Контакты" ? (
+                  <ContactModal
+                    key={label}
+                    icon={
+                      <span aria-hidden="true" className="header-cta-icon">
+                        {icon}
+                      </span>
+                    }
+                    className="header-cta header-cta-secondary header-cta-with-icon header-cta-intro"
+                  />
+                ) : (
+                  <a
+                    key={label}
+                    className="header-cta header-cta-secondary header-cta-with-icon header-cta-intro"
+                    {...linkProps}
+                  >
+                    {icon ? (
+                      <span aria-hidden="true" className="header-cta-icon">
+                        {icon}
+                      </span>
+                    ) : null}
+                    <span className="header-cta-label">{label}</span>
+                  </a>
+                )
+              )}
             </div>
           </section>
           </div>
