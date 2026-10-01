@@ -232,6 +232,10 @@ body.home {
     backdrop-filter: blur(8px);
 }
 
+.cn-toast {
+    font-family: var(--font-family);
+}
+
 .contact-modal {
     position: relative;
     display: flex;

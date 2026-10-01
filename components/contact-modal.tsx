@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "motion/react";
 import { ReactNode, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import { toast } from "sonner";
 
 import { CopyCheckIcon } from "@/components/icons/copy-check-icon";
 import { CopyIcon } from "@/components/icons/copy-icon";
@@ -61,6 +62,7 @@ export function ContactModal({
     try {
       await navigator.clipboard.writeText(email);
       setCopied(true);
+      toast.success("Email скопирован");
     } catch {
       setCopied(false);
     }
