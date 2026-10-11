@@ -14,12 +14,12 @@ export default function BankingMoneyPotPage() {
         </div>
 
         <section className="project-intro fade-in">
-          <h1>Cпроектировал Копилку в мобильном банке</h1>
+          <h1>Копилка в мобильном банке</h1>
           <h3 className="subtitle">
             Нашёл точку роста в розничных продуктах крупного Банка Казахстана, предложил решение для накопительных счетов
           </h3>
           <ProjectImage
-            src="/images/projects/moneypot_shot_1.jpg"
+            src="/images/projects/Moneypot_shot_1.jpg"
             alt="Скриншот Копилки в мобильном банке 1"
           />
           </section>
@@ -64,7 +64,7 @@ export default function BankingMoneyPotPage() {
             Выбрал копилку, так как она закрывает базовую потребность «Копить на цель» и главное, затрагивает остальные идеи: групповые накопления, автопополнение, аналитику.
           </p>
           <ProjectImage
-            src="/images/projects/moneypot_shot_audit.jpg"
+            src="/images/projects/Moneypot_shot_audit.jpg"
             alt="Аудит точек роста"
             caption="Аудит точек роста"
           />
@@ -101,7 +101,7 @@ export default function BankingMoneyPotPage() {
             </li>
           </ul>
           <ProjectImage
-            src="/images/projects/moneypot_shot_competitoranalysis.jpg"
+            src="/images/projects/Moneypot_shot_competitoranalysis.jpg"
             alt="Анализ конкурентов"
             caption="Анализ конкурентов"
           />
@@ -114,7 +114,7 @@ export default function BankingMoneyPotPage() {
             Точки входа: «Мой Банк», аналитика финансов, добавление продукта, пуши и баннеры.
           </p>
           <ProjectImage
-            src="/images/projects/moneypot_shot_userflow.jpg"
+            src="/images/projects/Moneypot_shot_userflow.jpg"
             alt="User Flow"
             caption="User Flow"
           />
@@ -127,7 +127,7 @@ export default function BankingMoneyPotPage() {
             По итогам теста внёс небольшие корректировки в макеты. Выборка небольшая, поэтому считаю результат проверкой базовой логики.
           </p>
           <ProjectImage
-            src="/images/projects/moneypot_shot_test.jpg"
+            src="/images/projects/Moneypot_shot_test.jpg"
             alt="Тестирование"
             caption="Тестирование"
           />
@@ -138,17 +138,17 @@ export default function BankingMoneyPotPage() {
           </p>
 
           <ProjectImage
-            src="/images/projects/moneypot_shot_2.jpg"
+            src="/images/projects/Moneypot_shot_2.jpg"
             alt="Скриншот Копилки в мобильном банке 2"
           />
 
           <ProjectImage
-            src="/images/projects/moneypot_shot_3.jpg"
+            src="/images/projects/Moneypot_shot_3.jpg"
             alt="Скриншот Копилки в мобильном банке 3"
           />
 
           <ProjectImage
-            src="/images/projects/moneypot_shot_4.jpg"
+            src="/images/projects/Moneypot_shot_4.jpg"
             alt="Скриншот Копилки в мобильном банке 4"
           />
 
