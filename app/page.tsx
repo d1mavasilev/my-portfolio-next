@@ -201,6 +201,25 @@ export default function Home() {
               </h2>
               <div className="case-list case-list-home">
                 <article className="case-item case-item-home fade-in">
+                  <a href="/cases/bankingmoneypot" className="case-link">
+                    <figure className="case-cover">
+                      <img
+                        src="/images/projects/Cover_moneypot.jpg"
+                        alt="Превью кейса Копилка в мобильном банке"
+                      />
+                    </figure>
+                    <div className="case-content case-content-home">
+                      <h4 className="case-title">
+                        Cпроектировал Копилку в мобильном банке
+                      </h4>
+                      <p className="case-description">
+                        2026
+                      </p>
+                    </div>
+                  </a>
+                </article>
+
+                <article className="case-item case-item-home fade-in">
                   <a href="/cases/ai-agents" className="case-link">
                     <figure className="case-cover">
                       <img
