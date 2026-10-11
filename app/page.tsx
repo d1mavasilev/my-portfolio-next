@@ -210,7 +210,7 @@ export default function Home() {
                     </figure>
                     <div className="case-content case-content-home">
                       <h4 className="case-title">
-                        Cпроектировал Копилку в мобильном банке
+                        Копилка в мобильном банке
                       </h4>
                       <p className="case-description">
                         2026

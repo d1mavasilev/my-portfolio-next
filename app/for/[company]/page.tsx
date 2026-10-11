@@ -221,7 +221,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
                     </figure>
                     <div className="case-content case-content-home">
                       <h4 className="case-title">
-                        Cпроектировал Копилку в мобильном банке
+                        Копилка в мобильном банке
                       </h4>
                       <p className="case-description">
                         2026
@@ -229,7 +229,7 @@ export default async function CompanyPage({ params }: { params: Promise<{ compan
                     </div>
                   </a>
                 </article>
-                
+
                 <article className="case-item case-item-home fade-in">
                   <a href="/cases/ai-agents" className="case-link">
                     <figure className="case-cover">
