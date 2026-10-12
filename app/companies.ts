@@ -87,5 +87,9 @@ export const companies: Record<string, { displayName: string; color: string }> =
     displayName: "re:Kassa",
     color: "#00E674",
   },
+  uzum: {
+    displayName: "Uzum",
+    color: "#7000FF",
+  },
   // сюда добавляешь новые компании
 };
