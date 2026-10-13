@@ -91,5 +91,9 @@ export const companies: Record<string, { displayName: string; color: string }> =
     displayName: "Uzum",
     color: "#7000FF",
   },
+  mbank: {
+    displayName: "MBank",
+    color: "#00817F",
+  },
   // сюда добавляешь новые компании
 };
