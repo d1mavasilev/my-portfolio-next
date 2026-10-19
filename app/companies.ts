@@ -76,7 +76,7 @@ export const companies: Record<string, { displayName: string; color: string }> =
     color: "#00805F",
   },
   kaspi: {
-    displayName: "Kaspi.kz",
+    displayName: "Kaspi",
     color: "#F14635",
   },
   homecreditbank: {
