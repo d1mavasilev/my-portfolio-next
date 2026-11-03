@@ -99,5 +99,9 @@ export const companies: Record<string, { displayName: string; color: string }> =
     displayName: "Самолёт",
     color: "#007BFB",
   },
+  psb: {
+    displayName: "Банк ПСБ",
+    color: "#2C2D84",
+  }
   // сюда добавляешь новые компании
 };
