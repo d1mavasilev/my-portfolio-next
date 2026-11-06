@@ -102,6 +102,10 @@ export const companies: Record<string, { displayName: string; color: string }> =
   psb: {
     displayName: "Банк ПСБ",
     color: "#E86630",
+  },
+  mechtakz: {
+    displayName: "Mechta.kz",
+    color: "#E61771",
   }
   // сюда добавляешь новые компании
 };
