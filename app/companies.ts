@@ -106,6 +106,10 @@ export const companies: Record<string, { displayName: string; color: string }> =
   mechtakz: {
     displayName: "Mechta.kz",
     color: "#E61771",
+  },
+  kmfbank: {
+    displayName: "KMF Банк",
+    color: "#E12E3F",
   }
   // сюда добавляешь новые компании
 };
