@@ -63,6 +63,10 @@ export const companies: Record<string, { displayName: string; color: string }> =
     displayName: "Т-Банк",
     color: "#f3db05",
   },
+  beeline: {
+    displayName: "Beeline",
+    color: "#FFC800",
+  },
   yandex: {
     displayName: "Яндекс",
     color: "#FC3F1D",
